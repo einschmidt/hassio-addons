@@ -1,3 +1,7 @@
+<p align="center">
+	<a href="https://caddyserver.com"><img src="https://user-images.githubusercontent.com/1128849/36338535-05fb646a-136f-11e8-987b-e6901e717d5a.png" alt="Caddy" width="450"></a>
+</p>
+
 # About
 
 This unofficial add-on gives an easy way to add [Caddy 2](https://caddyserver.com/) to your [Hass.io](https://home-assistant.io/hassio/) device.
