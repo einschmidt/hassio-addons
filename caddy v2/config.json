@@ -1,0 +1,14 @@
+{
+    "name": "Caddy V2",
+    "version": "0.0.1",
+    "slug": "caddyv2",
+    "description": "Caddy V2 web server",
+    "url": "https://github.com/berichta/hassio-addons",
+    "arch": ["armhf", "armv7", "amd64"],
+    "startup": "services",
+    "boot": "auto",
+    "map": ["share:rw", "ssl:rw"],
+    "host_network": true,
+    "options": {},
+    "schema": {}
+}
