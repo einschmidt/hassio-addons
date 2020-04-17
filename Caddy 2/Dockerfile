@@ -6,5 +6,6 @@ ENV XDG_CONFIG_HOME=/share
 ENV XDG_DATA_HOME=/ssl
 
 COPY run.sh /
+RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
