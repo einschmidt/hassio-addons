@@ -22,3 +22,12 @@ Then install the "Caddy 2" add-on.
 Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder. Place a Caddyfile at `/share/caddy/Caddyfile`. There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
 
 Caddy 2 watches the Caddyfile for any changes and adapts automatically upon save. Thus, there is no need to restart the add-on after changing the Caddyfile.
+
+# Caddyfile example
+
+A very simple Caddyfile for serving a default Home Assistant installation could look like this. Further information can be found [here](https://caddyserver.com/docs/caddyfile).
+```
+yourdomain.com {
+	reverse_proxy localhost:8123
+}
+```
