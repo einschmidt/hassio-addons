@@ -17,11 +17,9 @@ If you have trouble you can follow the [official docs](https://home-assistant.io
 
 Then install the "Caddy 2" add-on.
 
-# Configuration
+# Caddyfile setup
 
 Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder. Place a Caddyfile at `/share/caddy/Caddyfile`. There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
-
-Caddy 2 watches the Caddyfile for any changes and adapts automatically upon save. Thus, there is no need to restart the add-on after changing the Caddyfile.
 
 # Caddyfile example
 
@@ -31,3 +29,16 @@ yourdomain.com {
 	reverse_proxy localhost:8123
 }
 ```
+
+# Configuration
+
+**Note**: _Remember to restart the add-on when the configuration is changed._
+
+Example add-on configuration:
+
+```yaml
+args:
+  - '--watch'
+```
+
+**Note**: _This is just an example, don't copy and paste it! Create your own!_
