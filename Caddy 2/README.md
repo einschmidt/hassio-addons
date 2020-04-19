@@ -29,6 +29,12 @@ If you have trouble you can follow the [official docs](https://home-assistant.io
 
 Then install the "Caddy 2" add-on.
 
+# Default Proxy Server setup
+
+While Caddy 2 doesn't find any `Caddyfile` under `/share/caddy`, the addon will run as a proxy server for Home Assistant, using provided information from the add-on config, including automatic HTTPS.
+
+**Note**: As soon as Caddy 2 finds a `Caddyfile`, the default settings will be ignored in favour of the specified file.
+
 # Caddyfile setup
 
 Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder. Place a Caddyfile at `/share/caddy/Caddyfile` (no extension). There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
@@ -53,11 +59,39 @@ yourdomain.com {
 Example add-on configuration:
 
 ```yaml
+email: your@email.com
+domain: yourdomain.com
+destination: localhost
+port: 8123
 args:
   - '--watch'
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
+
+### Option: 'email'
+
+Email is your email address. Mainly used when creating an ACME account with your CA, and is highly recommended in case there are problems with your certificates.
+
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+
+### Option: 'domain'
+
+Your domain address.
+
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+
+### Option: 'destination'
+
+Defines the upstream address for the reverse proxy. For most cases, `localhost` should be fine.
+
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+
+### Option: 'port'
+
+Defines the port of the upstream address.
+
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
 ### Option: 'args'
 
