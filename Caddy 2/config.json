@@ -1,7 +1,7 @@
 {
     "name": "Caddy 2",
-    "version": "0.0.1.3",
-    "slug": "caddy2",
+    "version": "0.0.1.4",
+    "slug": "caddy2local",
     "description": "Caddy 2 web server",
     "url": "https://github.com/berichta/hassio-addons/tree/master/Caddy%202",
     "arch": ["armhf", "armv7", "amd64"],
@@ -10,9 +10,17 @@
     "map": ["share", "ssl:rw"],
     "host_network": true,
     "options": {
+        "email": "",
+        "domain": "mydomain.com",
+        "destination": "localhost",
+        "port": 8123,
         "args": []
     },
     "schema": {
+        "email": "str",
+        "domain": "str",
+        "destination": "str",
+        "port": "int",
         "args": ["str"]
     }
 }
