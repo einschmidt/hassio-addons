@@ -1,5 +1,5 @@
-0.0.1.3
+0.0.1.4
 
-**Breaking Changes**
-* Removed the fixed default arguments
-* Made the arguments configurable in the supervisor
+**Update**
+* Added a fallback-default which runs Caddy 2 as a proxy server in case no Caddyfile has been found
+* Added new add-on config options for the fallback-default
