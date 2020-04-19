@@ -7,6 +7,8 @@ ENV XDG_DATA_HOME=/ssl
 
 RUN apk add --no-cache bash jq coreutils
 
+COPY Caddyfile /etc/caddy/
+
 COPY run.sh /
 RUN chmod a+x /run.sh
 
