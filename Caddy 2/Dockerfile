@@ -5,6 +5,8 @@ ENV LANG C.UTF-8
 ENV XDG_CONFIG_HOME=/data
 ENV XDG_DATA_HOME=/ssl
 
+RUN apk add --no-cache bash jq coreutils
+
 COPY run.sh /
 RUN chmod a+x /run.sh
 
