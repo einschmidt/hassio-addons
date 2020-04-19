@@ -60,3 +60,9 @@ args:
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
+
+### Option: 'args'
+
+Allows you to specify additional Caddy 2 command line arguments.
+Add one or more shell commands to the list, and they will be executed every single time this add-on starts.
+**Note**: The `--config` argument is set automatically. Further information can be found in the offical [documentation](https://caddyserver.com/docs/command-line#caddy-run).
