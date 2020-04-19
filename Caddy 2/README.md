@@ -31,7 +31,7 @@ Then install the "Caddy 2" add-on.
 
 # Caddyfile setup
 
-Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder. Place a Caddyfile at `/share/caddy/Caddyfile`. There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
+Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder. Place a Caddyfile at `/share/caddy/Caddyfile` (no extension). There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
 
 # Caddyfile example
 
@@ -50,8 +50,6 @@ yourdomain.com {
 
 **Note**: _Remember to restart the add-on when the configuration is changed._
 
-The configuration allows to define all `caddy run` command line arguments individually. The `--config` argument is set automatically. Further information can be found in the offical [documentation](https://caddyserver.com/docs/command-line#caddy-run).
-
 Example add-on configuration:
 
 ```yaml
@@ -64,5 +62,6 @@ args:
 ### Option: 'args'
 
 Allows you to specify additional Caddy 2 command line arguments.
-Add one or more shell commands to the list, and they will be executed every single time this add-on starts.
+Add one or more arguments to the list, and they will be executed every single time this add-on starts.
+
 **Note**: The `--config` argument is set automatically. Further information can be found in the offical [documentation](https://caddyserver.com/docs/command-line#caddy-run).
