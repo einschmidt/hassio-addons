@@ -5,6 +5,15 @@
 
 Caddy simplifies your infrastructure. It takes care of TLS certificate renewals, OCSP stapling, static file serving, reverse proxying, Kubernetes ingress, and more.
 
+- **Easy configuration** with the [Caddyfile](https://caddyserver.com/docs/caddyfile)
+- **Powerful configuration** with its [native JSON config](https://caddyserver.com/docs/json/)
+- **Dynamic configuration** with the [JSON API](https://caddyserver.com/api)
+- [**Config adapters**](https://caddyserver.com/docs/config-adapters) if you don't like JSON
+- **Automatic HTTPS** by default
+	- [Let's Encrypt](https://letsencrypt.org) for public sites
+	- Fully-managed local CA for internal names & IPs
+	- Can coordinate with other Caddy instances in a cluster
+
 # About
 
 This unofficial add-on provides an easy way to add [Caddy 2](https://caddyserver.com/) to [Home Assistant](https://home-assistant.io/hassio/).
