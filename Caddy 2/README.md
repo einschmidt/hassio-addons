@@ -40,7 +40,7 @@ yourdomain.com {
 
 **Note**: _Remember to restart the add-on when the configuration is changed._
 
-The configuration allows to define all `caddy run` command line arguments individually. The `--config` argument is set automatically. Further information can be found in the offical ![documentation](https://caddyserver.com/docs/command-line#caddy-run).
+The configuration allows to define all `caddy run` command line arguments individually. The `--config` argument is set automatically. Further information can be found in the offical [documentation](https://caddyserver.com/docs/command-line#caddy-run).
 
 Example add-on configuration:
 
