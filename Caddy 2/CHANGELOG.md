@@ -1,6 +1,5 @@
-Minor system changes update
+0.0.1.3
 
-**Changes**
-* Changed the storage location of the config file into the /data location
-* Removed the write access from the /share location, because no longer needed
-* Removed the --environ parameter for now
+**Breaking Changes**
+* Removed the fixed default arguments
+* Made the arguments configurable in the supervisor
