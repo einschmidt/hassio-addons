@@ -69,31 +69,31 @@ args:
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
 
-### Option: 'email'
+### Option: `email`
 
 Email is your email address. Mainly used when creating an ACME account with your CA, and is highly recommended in case there are problems with your certificates.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: 'domain'
+### Option: `domain`
 
 Your domain address.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: 'destination'
+### Option: `destination`
 
 Defines the upstream address for the reverse proxy. For most cases, `localhost` should be fine.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: 'port'
+### Option: `port`
 
 Defines the port of the upstream address.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: 'args'
+### Option: `args`
 
 Allows you to specify additional Caddy 2 command line arguments.
 Add one or more arguments to the list, and they will be executed every single time this add-on starts.
