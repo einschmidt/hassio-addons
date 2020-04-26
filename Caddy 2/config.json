@@ -1,26 +1,37 @@
 {
-    "name": "Caddy 2",
-    "version": "0.0.1.4",
-    "slug": "caddy2",
+    "name": "Caddy 2 local",
+    "version": "0.0.2.1l",
+    "slug": "caddy2local",
     "description": "Caddy 2 web server",
     "url": "https://github.com/berichta/hassio-addons/tree/master/Caddy%202",
-    "arch": ["armhf", "armv7", "amd64"],
+    "arch": ["armhf", "armv7", "amd64", "aarch64"],
     "startup": "services",
     "boot": "auto",
+    "hassio_api": true,
+    "hassio_role": "default",
     "map": ["share", "ssl:rw"],
     "host_network": true,
     "options": {
-        "email": "",
-        "domain": "mydomain.com",
-        "destination": "localhost",
-        "port": 8123,
-        "args": []
+        "non_caddyfile_config": {
+            "email": "your@email.com",
+            "domain": "mydomain.com",
+            "destination": "localhost",
+            "port": 8123
+        },
+        "args": [],
+        "log_level": "info"
     },
     "schema": {
-        "email": "str",
-        "domain": "str",
-        "destination": "str",
-        "port": "int",
-        "args": ["str"]
+        "non_caddyfile_config": {
+            "email": "str",
+            "domain": "str",
+            "destination": "str",
+            "port": "int"
+        },
+        "args": ["str"],
+        "log_level": "list(trace|debug|info|notice|warning|error|fatal)"
+    },
+    "environment": {
+        "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
     }
 }
