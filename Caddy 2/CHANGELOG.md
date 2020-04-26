@@ -1,5 +1,6 @@
-0.0.1.4
+0.0.2.0
 
-**Update**
-* Added a fallback-default which runs Caddy 2 as a proxy server in case no Caddyfile has been found
-* Added new add-on config options for the fallback-default
+**Breaking changes Update**
+* Complete rewrite of the add-on
+* Based on hassioaddons/base now
+* Changed (grouped) config
