@@ -33,7 +33,7 @@ Then install the "Caddy 2" add-on.
 
 While Caddy 2 doesn't find any `Caddyfile` under `/share/caddy`, the addon will run as a proxy server for Home Assistant, using provided information from the add-on config, including automatic HTTPS.
 
-**Note**: As soon as Caddy 2 finds a `Caddyfile`, the default settings will be ignored in favour of the specified file.
+**Note**: As soon as Caddy 2 finds a `Caddyfile`, the `non_caddyfile_config` settings will be ignored in favour of the Caddyfile.
 
 # Caddyfile setup
 
@@ -59,35 +59,37 @@ yourdomain.com {
 Example add-on configuration:
 
 ```yaml
-email: your@email.com
-domain: yourdomain.com
-destination: localhost
-port: 8123
+non_caddyfile_config:
+  email: your@email.com
+  domain: yourdomain.com
+  destination: localhost
+  port: 8123
 args:
   - '--watch'
+log_level: info
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
 
-### Option: `email`
+### Option: `non_caddyfile_config.email`
 
 Email is your email address. Mainly used when creating an ACME account with your CA, and is highly recommended in case there are problems with your certificates.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: `domain`
+### Option: `non_caddyfile_config.domain`
 
 Your domain address.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: `destination`
+### Option: `non_caddyfile_config.destination`
 
 Defines the upstream address for the reverse proxy. For most cases, `localhost` should be fine.
 
 **Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
 
-### Option: `port`
+### Option: `non_caddyfile_config.port`
 
 Defines the port of the upstream address.
 
@@ -99,3 +101,21 @@ Allows you to specify additional Caddy 2 command line arguments.
 Add one or more arguments to the list, and they will be executed every single time this add-on starts.
 
 **Note**: The `--config` argument is set automatically. Further information can be found in the offical [documentation](https://caddyserver.com/docs/command-line#caddy-run).
+
+### Option: `log_level`
+
+The `log_level` option controls the level of log output by the addon and can
+be changed to be more or less verbose, which might be useful when you are
+dealing with an unknown issue. Possible values are:
+
+- `trace`: Show every detail, like all called internal functions.
+- `debug`: Shows detailed debug information.
+- `info`: Normal (usually) interesting events.
+- `warning`: Exceptional occurrences that are not errors.
+- `error`:  Runtime errors that do not require immediate action.
+- `fatal`: Something went terribly wrong. Add-on becomes unusable.
+
+Please note that each level automatically includes log messages from a
+more severe level, e.g., `debug` also shows `info` messages. By default,
+the `log_level` is set to `info`, which is the recommended setting unless
+you are troubleshooting.
