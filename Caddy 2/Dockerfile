@@ -53,7 +53,7 @@ LABEL \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Caddy 2" \
     org.label-schema.schema-version="1.0" \
-    org.label-schema.url="https://addons.community" \
+    org.label-schema.url="https://github.com/berichta/hassio-addons" \
     org.label-schema.usage="https://github.com/berichta/hassio-addons/blob/master/Caddy%202/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
     org.label-schema.vcs-url="https://github.com/berichta/hassio-addons" \
