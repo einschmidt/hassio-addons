@@ -1,7 +1,7 @@
 {
-    "name": "Caddy 2 local",
-    "version": "0.0.2.1l",
-    "slug": "caddy2local",
+    "name": "Caddy 2",
+    "version": "0.0.2.0",
+    "slug": "caddy2",
     "description": "Caddy 2 web server",
     "url": "https://github.com/berichta/hassio-addons/tree/master/Caddy%202",
     "arch": ["armhf", "armv7", "amd64", "aarch64"],
