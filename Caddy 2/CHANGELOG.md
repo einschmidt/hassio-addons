@@ -1,6 +1,4 @@
-0.0.2.0
+0.0.2.1
 
-**Breaking changes Update**
-* Complete rewrite of the add-on
-* Based on hassioaddons/base now
-* Changed (grouped) config
+**Version Update**
+* Update Caddy 2.0.0-RC3 to Caddy 2.0.0
