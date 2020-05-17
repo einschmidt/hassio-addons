@@ -1,4 +1,7 @@
-0.0.2.1
+0.0.2.2
+
+**New feature**
+* Allow to run custom caddy versions
 
 **Version Update**
-* Update Caddy 2.0.0-RC3 to Caddy 2.0.0
+* Update base image version to 7.2.0

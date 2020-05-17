@@ -119,3 +119,14 @@ Please note that each level automatically includes log messages from a
 more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
+
+# Updates/Plugins
+
+#### Explanation
+This add-on uses single binary files for launching Caddy, which makes it easy to run a custom Caddy build with whatever version and plugins you want.
+
+#### Custom Caddy binaries
+You can build your own version of Caddy like described [here](https://caddyserver.com/docs/build#xcaddy).
+
+#### Install
+To use a custom binary, place the `caddy` file into the same folder (`/share/caddy/`) as your `Caddyfile`. Restart the add-on to start using the custom version.
