@@ -33,5 +33,6 @@
     },
     "environment": {
         "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
-    }
+    },
+    "image":"berichta/caddy-2-{arch}"
 }
