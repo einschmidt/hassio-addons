@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Add-on: Radicale
+# Runs Radicale
+# ==============================================================================
+
+bashio::log.info 'Starting Radicale...'
+
+# Run Radicale
+exec /usr/bin/radicale.sh
