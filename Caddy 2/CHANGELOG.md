@@ -1,7 +1,7 @@
-0.0.2.2
+0.0.2.3
 
-**New feature**
-* Allow to run custom caddy versions
+**Set Environment Variables**
+Set environment variables via the addon-config
 
 **Version Update**
-* Update base image version to 7.2.0
+* Update base image version to 8.0.0
