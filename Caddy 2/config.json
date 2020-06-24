@@ -1,6 +1,6 @@
 {
     "name": "Caddy 2",
-    "version": "0.0.2.2",
+    "version": "0.0.2.3",
     "slug": "caddy2",
     "description": "Caddy 2 web server",
     "url": "https://github.com/berichta/hassio-addons/tree/master/Caddy%202",
@@ -19,6 +19,7 @@
             "port": 8123
         },
         "args": [],
+        "env_vars": [],
         "log_level": "info"
     },
     "schema": {
@@ -29,10 +30,15 @@
             "port": "int"
         },
         "args": ["str"],
+        "env_vars": [
+            {
+                "name": "str",
+                "value": "str"
+            }
+        ],
         "log_level": "list(trace|debug|info|notice|warning|error|fatal)"
     },
     "environment": {
         "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
-    },
-    "image":"berichta/caddy-2-{arch}"
+    }
 }
