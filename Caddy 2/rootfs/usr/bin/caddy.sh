@@ -17,8 +17,19 @@ non_caddyfile_config() {
 main() {
     bashio::log.trace "${FUNCNAME[0]}"
 
+    declare name
+    declare value
     ARGS=$(bashio::config 'args')
 
+    # Load custom environment variables
+    for var in $(bashio::config 'env_vars|keys'); do
+        name=$(bashio::config "env_vars[${var}].name")
+        value=$(bashio::config "env_vars[${var}].value")
+        bashio::log.info "Setting ${name} to ${value}"
+        export "${name}=${value}"
+    done
+
+    # Check for custom Caddy binary
     if bashio::fs.file_exists '/share/caddy/caddy'; then
         CADDY_PATH=/share/caddy/caddy
 
@@ -33,6 +44,7 @@ main() {
         ${CADDY_PATH} version
     fi
     
+    # Check for existing Caddyfile
     if bashio::fs.file_exists '/share/caddy/Caddyfile'; then
         bashio::log.info "Caddyfile found"
         CONFIG_PATH=/share/caddy/Caddyfile
@@ -42,6 +54,7 @@ main() {
         non_caddyfile_config
     fi
 
+    # Run Caddy
     ${CADDY_PATH} run --config ${CONFIG_PATH} ${ARGS}
 }
 main "$@"
