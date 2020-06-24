@@ -66,6 +66,7 @@ non_caddyfile_config:
   port: 8123
 args:
   - '--watch'
+env_vars: []
 log_level: info
 ```
 
@@ -101,6 +102,18 @@ Allows you to specify additional Caddy 2 command line arguments.
 Add one or more arguments to the list, and they will be executed every single time this add-on starts.
 
 **Note**: The `--config` argument is set automatically. Further information can be found in the offical [documentation](https://caddyserver.com/docs/command-line#caddy-run).
+
+### Option: `env_vars`
+
+Allows you to specify multiple environment variables. Usually used for custom binary builds. 
+
+#### Option: `env_vars.name`
+
+Defines the name of an environment variable.
+
+#### Option: `env_vars.value`
+
+Defines the value of an environment variable.
 
 ### Option: `log_level`
 
