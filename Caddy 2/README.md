@@ -105,7 +105,17 @@ Add one or more arguments to the list, and they will be executed every single ti
 
 ### Option: `env_vars`
 
-Allows you to specify multiple environment variables. Usually used for custom binary builds. 
+Allows you to specify multiple environment variables. Usually used for custom binary builds.
+env_vars example:
+```
+...
+env_vars:
+  - name: NAMECHEAP_API_USER
+    value: xxxx
+  - name: NAMECHEAP_API_KEY
+    value: xxx
+...
+```
 
 #### Option: `env_vars.name`
 
