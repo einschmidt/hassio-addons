@@ -1,7 +1,4 @@
-0.0.2.3
+0.0.3
 
-**Set Environment Variables**
-Set environment variables via the addon-config
-
-**Version Update**
-* Update base image version to 8.0.0
+**Update Caddy to 2.1.0**
+Update Caddy to the latest release 2.1.0
