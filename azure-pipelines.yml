@@ -20,10 +20,13 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-    - task: Docker@2
-      displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/radicale/Dockerfile'
-        tags: |
-          $(tag)
+    - script: sudo docker login -u $(DOCKER_USER) -p $(DOCKER_PASSWORD)
+      displayName: Login to Docker Hub
+    - script: sudo docker pull homeassistant/amd64-builder
+      displayName: Install hassio builder
+    - script: |
+        docker run --rm --privileged -v ~/.docker:/root/.docker \
+        -v /run/docker.sock:/run/docker.sock:rw \
+        -v $(pwd)/radicale:/data:ro homeassistant/amd64-builder --all -t /data \
+        --no-latest --test
+      displayName: Build radicale with tag :test (no push)
