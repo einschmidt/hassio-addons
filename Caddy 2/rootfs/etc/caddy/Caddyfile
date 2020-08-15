@@ -1,7 +1,0 @@
-{
-    email {$EMAIL}
-}
-
-{$DOMAIN} {
-    reverse_proxy {$DESTINATION}:{$PORT}
-}
