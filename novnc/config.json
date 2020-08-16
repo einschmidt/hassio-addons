@@ -1,6 +1,6 @@
 {
     "name": "NoVNC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "slug": "novnc",
     "description": "The HTML5 VNC Client",
     "url": "https://github.com/berichta/addon-novnc",
