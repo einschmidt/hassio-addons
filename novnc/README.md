@@ -9,7 +9,7 @@ The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other [_Hass.io_](https://www.home-assistant.io/hassio/) add-on.
 
 
-![screenshot](images/screenshot.png)
+![screenshot](screenshot.png)
 
 ## Configuration
 
