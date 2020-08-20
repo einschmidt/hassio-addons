@@ -1,0 +1,31 @@
+{
+    "name": "youtube-dl",
+    "version": "0.0.1",
+    "slug": "youtube-dl",
+    "description": "Download videos from youtube.com and a few more sites",
+    "url": "https://github.com/berichta/hassio-addons",
+    "arch": ["armhf", "armv7", "amd64", "aarch64", "i386"],
+    "startup": "once",
+    "boot": "manual",
+    "map": ["share:rw"],
+    "options": {
+        "Options": [],
+        "URL": "https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8",
+        "log_level": "info"
+    },
+    "schema": {
+        "options": ["str"],
+        "URL": "url",
+        "env_vars": [
+            {
+                "name": "str",
+                "value": "str"
+            }
+        ],
+        "log_level": "list(trace|debug|info|notice|warning|error|fatal)"
+    },
+    "environment": {
+        "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
+    },
+    "image": "berichta/youtube-dl-{arch}"
+}
