@@ -1,6 +1,6 @@
 {
     "name": "youtube-dl",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "slug": "youtube-dl",
     "description": "Download videos from youtube.com and a few more sites",
     "url": "https://github.com/berichta/hassio-addons",
@@ -10,7 +10,7 @@
     "map": ["share:rw"],
     "options": {
         "options": [],
-        "URL": "https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8",
+        "URL": "",
         "log_level": "info"
     },
     "schema": {
