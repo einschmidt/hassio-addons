@@ -9,7 +9,7 @@
     "boot": "manual",
     "map": ["share:rw"],
     "options": {
-        "Options": [],
+        "options": [],
         "URL": "https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8",
         "log_level": "info"
     },
