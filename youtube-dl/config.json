@@ -1,6 +1,6 @@
 {
     "name": "youtube-dl",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "slug": "youtube-dl",
     "description": "Download videos from youtube.com and a few more sites",
     "url": "https://github.com/berichta/hassio-addons",
@@ -15,7 +15,7 @@
     },
     "schema": {
         "options": ["str"],
-        "URL": "url",
+        "URL": "str",
         "log_level": "list(trace|debug|info|notice|warning|error|fatal)"
     },
     "environment": {
