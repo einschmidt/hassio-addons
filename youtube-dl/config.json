@@ -16,12 +16,6 @@
     "schema": {
         "options": ["str"],
         "URL": "url",
-        "env_vars": [
-            {
-                "name": "str",
-                "value": "str"
-            }
-        ],
         "log_level": "list(trace|debug|info|notice|warning|error|fatal)"
     },
     "environment": {
