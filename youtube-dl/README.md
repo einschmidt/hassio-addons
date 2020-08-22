@@ -1,3 +1,5 @@
+![logo](logo.png)
+
 # youtube-dl
 youtube-dl is a command-line program to download videos from YouTube.com and a few [more sites](http://ytdl-org.github.io/youtube-dl/supportedsites.html).
 
