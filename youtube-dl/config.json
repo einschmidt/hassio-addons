@@ -1,6 +1,6 @@
 {
     "name": "youtube-dl",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "slug": "youtube-dl",
     "description": "Download videos from youtube.com and a few more sites",
     "url": "https://github.com/berichta/hassio-addons",
@@ -10,7 +10,7 @@
     "map": ["share:rw"],
     "options": {
         "options": [],
-        "URL": "",
+        "URL": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
         "log_level": "info"
     },
     "schema": {
