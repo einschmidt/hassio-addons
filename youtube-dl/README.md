@@ -17,11 +17,6 @@ If you have trouble you can follow the [official docs](https://home-assistant.io
 
 Then install the "youtube-dl" add-on.
 
-# Default output location
-
-By default, this add-on uses an output option which will store download files under `/share/youtube-dl/`. The output folder will be created automatically.
-However, this option can be overwritten via `options` and setting the '-o' option. See [OUTPUT TEMPLATE](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#output-template) for further information.
-
 # Default Stop
 
 The add-on will stop itself after successful download or in case an error occured. This is intended behavior.
@@ -31,9 +26,10 @@ The add-on will stop itself after successful download or in case an error occure
 Example add-on configuration:
 
 ```yaml
+global_options:
 options:
   - "--include-ads"
-url: https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+url: # https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 log_level: info
 ```
 
