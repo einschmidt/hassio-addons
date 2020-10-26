@@ -9,5 +9,7 @@
     "boot": "manual",
     "ingress": true,
     "panel_icon": "mdi:rss-box",
+    "options": "",
+    "schema": "",
     "image": "berichta/newspipe-{arch}"
 }
