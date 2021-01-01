@@ -1,3 +1,9 @@
+v0.1.0
+
+* **Update Caddy to 2.3.0**
+* **Update Base image to 8.0.6**
+* **Added new config options for flexible addon config**
+
 0.0.5
 
 **Update Caddy to 2.2.0**
