@@ -11,9 +11,10 @@ Caddy simplifies your infrastructure. It takes care of TLS certificate renewals,
 - **Dynamic configuration** with the [JSON API](https://caddyserver.com/api)
 - [**Config adapters**](https://caddyserver.com/docs/config-adapters) if you don't like JSON
 - **Automatic HTTPS** by default
-	- [Let's Encrypt](https://letsencrypt.org) for public sites
+	- [ZeroSSL](https://zerossl.com) and [Let's Encrypt](https://letsencrypt.org) for public names
 	- Fully-managed local CA for internal names & IPs
 	- Can coordinate with other Caddy instances in a cluster
+	- Multi-issuer fallback
 
 # About
 
@@ -23,7 +24,7 @@ This unofficial add-on provides an easy way to add [Caddy 2](https://caddyserver
 
 Add this repository to your [Hass.io](https://home-assistant.io/hassio/) instance:
 
-`https://github.com/berichta/hassio-addons`
+`https://github.com/einschmidt/hassio-addons`
 
 If you have trouble you can follow the [official docs](https://home-assistant.io/hassio/installing_third_party_addons/).
 
@@ -31,13 +32,13 @@ Then install the "Caddy 2" add-on.
 
 # Default Proxy Server setup
 
-While Caddy 2 doesn't find any `Caddyfile` under `/share/caddy`, the addon will run as a proxy server for Home Assistant, using provided information from the add-on config, including automatic HTTPS.
+While Caddy 2 isn't provided with a Caddyfile, the addon will run as a proxy server for Home Assistant, using provided information from the add-on config, including automatic HTTPS.
 
 **Note**: As soon as Caddy 2 finds a `Caddyfile`, the `non_caddyfile_config` settings will be ignored in favour of the Caddyfile.
 
 # Caddyfile setup
 
-Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder. Place a Caddyfile at `/share/caddy/Caddyfile` (no extension). There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
+Using the [SSH](https://home-assistant.io/addons/ssh/) or [Samba](https://home-assistant.io/addons/samba/) add-ons, create the `/share/caddy` folder and place a Caddyfile at `/share/caddy/Caddyfile` (no extension), or specify the location of your Caddyfile using `config_path`. There's also access to the `/ssl` folder if you want to use certificates from another add-on, or use this add-on to create certificates for other add-ons. Finally, this add-on uses Host networking so you can listen on any ports you need.
 
 # Caddyfile example
 
@@ -56,45 +57,60 @@ yourdomain.com {
 
 **Note**: _Remember to restart the add-on when the configuration is changed._
 
-Example add-on configuration:
+Example add-on configurations:
 
-```yaml
-non_caddyfile_config:
-  email: your@email.com
-  domain: yourdomain.com
-  destination: localhost
-  port: 8123
-args:
-  - '--watch'
-env_vars: []
-log_level: info
-```
+- ```yaml
+  non_caddyfile_config:
+    email: your@email.com
+    domain: yourdomain.com
+    destination: localhost
+    port: 8123
+  args:
+    - '--watch'
+  env_vars: []
+  log_level: info
+  ```
+- ```yaml
+  config_path: /config/caddy/Caddyfile
+  non_caddyfile_config: {}
+  args: []
+  env_vars: []
+  log_level: info
+  ```
 
-**Note**: _This is just an example, don't copy and paste it! Create your own!_
+**Note**: _These are just examples, don't copy and paste them! Create your own!_
 
 ### Option: `non_caddyfile_config.email`
 
 Email is your email address. Mainly used when creating an ACME account with your CA, and is highly recommended in case there are problems with your certificates.
 
-**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` at `config_path`.
 
 ### Option: `non_caddyfile_config.domain`
 
 Your domain address.
 
-**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` at `config_path`.
 
 ### Option: `non_caddyfile_config.destination`
 
 Defines the upstream address for the reverse proxy. For most cases, `localhost` should be fine.
 
-**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` at `config_path`.
 
 ### Option: `non_caddyfile_config.port`
 
 Defines the port of the upstream address.
 
-**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` under `/share/caddy`.
+**Note**: This option will be used only for the default reverse proxy config, which applies when Caddy doesn't find any `Caddyfile` at `config_path`.
+
+### Option: `config_path`
+
+Allows you to specify the path to your Caddyfile. Defaults to `/share/caddy/Caddyfile` if not specified.
+
+### Option: `custom_binary_path`
+
+Allows you to specify the path to a custom `caddy` binary. Defaults to `/share/caddy/caddy` if not specified.
 
 ### Option: `args`
 
@@ -152,4 +168,4 @@ This add-on uses single binary files for launching Caddy, which makes it easy to
 You can build your own version of Caddy like described [here](https://caddyserver.com/docs/build#xcaddy).
 
 #### Install
-To use a custom binary, place the `caddy` file into the same folder (`/share/caddy/`) as your `Caddyfile`. Restart the add-on to start using the custom version.
+To use a custom binary, place the `caddy` file at `/share/caddy/caddy` or point to it with `custom_binary_path`. Restart the add-on to start using the custom version.
