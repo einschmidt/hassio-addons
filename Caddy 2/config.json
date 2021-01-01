@@ -9,7 +9,7 @@
     "boot": "auto",
     "hassio_api": true,
     "hassio_role": "default",
-    "map": ["share", "ssl:rw"],
+    "map": ["share", "config", "ssl:rw"],
     "host_network": true,
     "options": {
         "non_caddyfile_config": {
@@ -24,11 +24,13 @@
     },
     "schema": {
         "non_caddyfile_config": {
-            "email": "str",
-            "domain": "str",
-            "destination": "str",
-            "port": "int"
+            "email": "email?",
+            "domain": "str?",
+            "destination": "str?",
+            "port": "port?"
         },
+        "config_path": "str?",
+        "custom_binary_path": "str?",
         "args": ["str"],
         "env_vars": [
             {
