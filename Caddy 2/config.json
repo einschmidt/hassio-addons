@@ -3,7 +3,7 @@
     "version": "0.0.6",
     "slug": "caddy2",
     "description": "Caddy 2 web server",
-    "url": "https://github.com/berichta/hassio-addons/tree/master/Caddy%202",
+    "url": "https://github.com/einschmidt/hassio-addons/tree/master/Caddy%202",
     "arch": ["armhf", "armv7", "amd64", "aarch64"],
     "startup": "services",
     "boot": "auto",
