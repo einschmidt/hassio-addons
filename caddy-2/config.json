@@ -1,9 +1,9 @@
 {
   "name": "Caddy 2",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "slug": "caddy-2",
-  "description": "Caddy 2 web server",
-  "url": "https://github.com/einschmidt/addons-caddy-2",
+  "description": "Powerful server with automatic HTTPS",
+  "url": "https://github.com/einschmidt/addon-caddy-2",
   "arch": [
     "armhf",
     "armv7",
@@ -11,9 +11,6 @@
     "aarch64"
   ],
   "startup": "services",
-  "boot": "auto",
-  "hassio_api": true,
-  "hassio_role": "default",
   "map": [
     "share",
     "config",
@@ -54,5 +51,5 @@
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
   },
-  "image": "berichta/caddy-2-{arch}"
+  "image": "ghcr.io/einschmidt/caddy-2/{arch}"
 }
