@@ -1,17 +1,16 @@
-v0.1.0
+# Repository update
 
-* **Update Caddy to 2.3.0**
-* **Update Base image to 8.0.6**
-* **Added new config options for flexible addon config**
+(!) Important change!
 
-0.0.5
+This update has been released to inform you about a repository update.
+Please check the Add-on Store and search for the new "Caddy 2"
+Addon, which replaces the current one.
 
-**Update Caddy to 2.2.0**
+The new add-on is using some automations, making life easier in the long
+run :-)
 
-**Update Base image to 8.0.3**
+Furthermore, the new Add-on will utilise the GitHub container repository
+instead of the Docker Hub.
 
-0.0.4
-
-**Update Caddy to 2.1.1**
-
-Update Caddy to the latest release 2.1.1
+When switching the add-on, please don't forget to copy the add-on config. Other
+actions shouldn't be necessary.
