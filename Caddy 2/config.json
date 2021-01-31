@@ -1,7 +1,7 @@
 {
   "name": "Caddy 2 (repo update!)",
   "version": "0.1.2",
-  "slug": "caddy-2",
+  "slug": "caddy2",
   "description": "Caddy 2 web server",
   "url": "https://github.com/einschmidt/addons-caddy-2",
   "arch": [
