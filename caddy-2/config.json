@@ -1,9 +1,9 @@
 {
   "name": "Caddy 2",
   "version": "0.1.1",
-  "slug": "caddy2",
+  "slug": "caddy-2",
   "description": "Caddy 2 web server",
-  "url": "https://github.com/einschmidt/hassio-addons/tree/master/Caddy%202",
+  "url": "https://github.com/einschmidt/addons-caddy-2",
   "arch": [
     "armhf",
     "armv7",
