@@ -1,6 +1,6 @@
 {
   "name": "youtube-dl",
-  "version": "2021.01.19",
+  "version": "8ff6cee",
   "slug": "youtube-dl",
   "description": "Download videos from youtube.com and a few more sites",
   "url": "https://github.com/einschmidt/hassio-addons",
