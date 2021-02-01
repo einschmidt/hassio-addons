@@ -1,9 +1,9 @@
 {
   "name": "youtube-dl",
-  "version": "8ff6cee",
+  "version": "0.0.4",
   "slug": "youtube-dl",
   "description": "Download videos from youtube.com and a few more sites",
-  "url": "https://github.com/einschmidt/hassio-addons",
+  "url": "https://github.com/einschmidt/addon-youtube-dl",
   "arch": [
     "armhf",
     "armv7",
@@ -41,5 +41,5 @@
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
   },
-  "image": "berichta/youtube-dl-{arch}"
+  "image": "ghcr.io/einschmidt/youtube-dl/{arch}"
 }
