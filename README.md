@@ -23,7 +23,7 @@ https://github.com/einschmidt/hassio-addons
 ![Supports amd64 Architecture][caddy-2-amd64-shield]
 ![Supports i386 Architecture][caddy-2-i386-shield]
 
-Powerful server with automatic HTTPS
+Open source web and proxy server with automatic HTTPS
 
 [:books: Caddy 2 add-on documentation][addon-doc-caddy-2]
 
