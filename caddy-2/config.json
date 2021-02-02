@@ -1,8 +1,8 @@
 {
   "name": "Caddy 2",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "slug": "caddy-2",
-  "description": "Powerful server with automatic HTTPS",
+  "description": "Open source web and proxy server with automatic HTTPS",
   "url": "https://github.com/einschmidt/addon-caddy-2",
   "arch": [
     "armhf",
