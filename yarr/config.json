@@ -1,22 +1,29 @@
 {
   "name": "yarr!",
-  "version": "3f96f37",
+  "version": "0.0.1",
   "slug": "yarr",
   "description": "Yet another rss reader",
   "url": "https://github.com/einschmidt/addon-yarr",
   "ingress": true,
   "ingress_port": 7071,
   "panel_icon": "mdi:rss-box",
-  "arch": ["armhf", "armv7", "amd64", "aarch64"],
+  "arch": [
+    "armhf",
+    "armv7",
+    "amd64",
+    "aarch64"
+  ],
   "ports": {
     "80/tcp": null
   },
   "ports_description": {
     "80/tcp": "Web interface (Not required for Ingress)"
   },
-  "map": ["ssl"],
+  "map": [
+    "ssl"
+  ],
   "options": {
-    "ssl": false,
+    "ssl": true,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem"
   },
@@ -26,5 +33,6 @@
     "certfile": "str",
     "keyfile": "str",
     "leave_front_door_open": "bool?"
-  }
+  },
+  "image": "ghcr.io/einschmidt/yarr/{arch}"
 }
