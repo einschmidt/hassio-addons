@@ -5,6 +5,10 @@ addons:
     repository: einschmidt/addon-caddy-2
     target: caddy-2
     image: ghcr.io/einschmidt/caddy-2/{arch}
+  yarr:
+    repository: einschmidt/addon-yarr
+    target: yarr
+    image: ghcr.io/einschmidt/yarr/{arch}
   youtube-dl:
     repository: einschmidt/addon-youtube-dl
     target: youtube-dl
