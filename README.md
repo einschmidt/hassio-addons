@@ -27,6 +27,19 @@ Open source web and proxy server with automatic HTTPS
 
 [:books: Caddy 2 add-on documentation][addon-doc-caddy-2]
 
+### &#10003; [yarr!][addon-yarr]
+
+![Latest Version][yarr-version-shield]
+![Supports armhf Architecture][yarr-armhf-shield]
+![Supports armv7 Architecture][yarr-armv7-shield]
+![Supports aarch64 Architecture][yarr-aarch64-shield]
+![Supports amd64 Architecture][yarr-amd64-shield]
+![Supports i386 Architecture][yarr-i386-shield]
+
+Yet another rss reader
+
+[:books: yarr! add-on documentation][addon-doc-yarr]
+
 ### &#10003; [youtube-dl][addon-youtube-dl]
 
 ![Latest Version][youtube-dl-version-shield]
@@ -91,6 +104,15 @@ SOFTWARE.
 [caddy-2-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [caddy-2-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [caddy-2-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+[addon-yarr]: https://github.com/einschmidt/addon-yarr/tree/v0.0.1
+[addon-doc-yarr]: https://github.com/einschmidt/addon-yarr/blob/v0.0.1/README.md
+[yarr-issue]: https://github.com/einschmidt/addon-yarr/issues
+[yarr-version-shield]: https://img.shields.io/badge/version-v0.0.1-blue.svg
+[yarr-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[yarr-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[yarr-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[yarr-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[yarr-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-youtube-dl]: https://github.com/einschmidt/addon-youtube-dl/tree/v0.0.5
 [addon-doc-youtube-dl]: https://github.com/einschmidt/addon-youtube-dl/blob/v0.0.5/README.md
 [youtube-dl-issue]: https://github.com/einschmidt/addon-youtube-dl/issues
