@@ -51,6 +51,15 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
+### Option: `db_path`
+
+This option allows you to override the default db file storage path. For
+example, use a different configuration like `/share/yarr/yarr.db` instead of
+`/data/yarr.db`.
+
+When not configured, the addon will automatically use the
+default: `/data/yarr.db`
+
 ## Known issues and limitations
 
 This add-on has no user management. As such, please think twice before you

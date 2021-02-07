@@ -1,6 +1,6 @@
 {
   "name": "yarr!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "slug": "yarr",
   "description": "Yet another rss reader",
   "url": "https://github.com/einschmidt/addon-yarr",
@@ -20,6 +20,7 @@
     "80/tcp": "Web interface (Not required for Ingress)"
   },
   "map": [
+    "share:rw",
     "ssl"
   ],
   "options": {
@@ -32,7 +33,7 @@
     "ssl": "bool",
     "certfile": "str",
     "keyfile": "str",
-    "leave_front_door_open": "bool?"
+    "db_path": "str?"
   },
   "image": "ghcr.io/einschmidt/yarr/{arch}"
 }

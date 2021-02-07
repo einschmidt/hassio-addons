@@ -1,2 +1,8 @@
 ## What’s changed
-- Secure SSL config option @einschmidt (#6)
+## ✨ New features
+
+- Make db file path configurable @einschmidt (#7)
+
+## 🚀 Enhancements
+
+- Show version on startup @einschmidt (#8)
