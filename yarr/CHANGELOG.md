@@ -1,8 +1,8 @@
 ## What’s changed
-## ✨ New features
+## 📚 Documentation
 
-- Make db file path configurable @einschmidt (#7)
+- Update-icon-and-logo @einschmidt (#9)
 
-## 🚀 Enhancements
+## ⬆️ Dependency updates
 
-- Show version on startup @einschmidt (#8)
+- Bump actions/stale from v3.0.15 to v3.0.16 @dependabot (#10)
