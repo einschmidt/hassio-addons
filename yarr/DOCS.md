@@ -34,10 +34,18 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
+### Option: `login.username`
+
+Sets the login username for yarr. Can't be empty.
+
+### Option: `login.password`
+
+Sets the login password for yarr. Can't be empty.
+
 ### Option: `ssl`
 
-Enables/Disables SSL (HTTPS) on the web interface of Bookstack
-Panel. Set it `true` to enable it, `false` otherwise.
+Enables/Disables SSL (HTTPS) on the web interface of yarr!
+Set it `true` to enable it, `false` otherwise.
 
 ### Option: `certfile`
 
@@ -59,10 +67,3 @@ example, use a different configuration like `/share/yarr/yarr.db` instead of
 
 When not configured, the addon will automatically use the
 default: `/data/yarr.db`
-
-## Known issues and limitations
-
-This add-on has no user management. As such, please think twice before you
-make this add-on available to the internet. For example, you could secure
-any access via basic auth on any web server. Ingress (default) should be
-fine, as the access is granted via Home Assistant.
