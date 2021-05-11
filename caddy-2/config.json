@@ -1,6 +1,6 @@
 {
   "name": "Caddy 2",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "slug": "caddy-2",
   "description": "Open source web and proxy server with automatic HTTPS",
   "url": "https://github.com/einschmidt/addon-caddy-2",
@@ -12,21 +12,11 @@
   ],
   "startup": "services",
   "map": [
-    "share",
+    "share:rw",
     "config",
     "ssl:rw"
   ],
   "host_network": true,
-  "ports": {
-    "80/tcp": 80,
-    "443/tcp": 443,
-    "2019/tcp": null
-  },
-  "ports_description": {
-    "80/tcp": "HTTP port",
-    "443/tcp": "HTTPS port",
-    "2019/tcp": "Administration endpoint"
-  },
   "options": {
     "non_caddyfile_config": {
       "email": "your@email.com",
@@ -45,6 +35,8 @@
       "destination": "str?",
       "port": "port?"
     },
+    "caddy_upgrade": "bool?",
+    "caddy_fmt": "bool?",
     "config_path": "str?",
     "custom_binary_path": "str?",
     "args": [

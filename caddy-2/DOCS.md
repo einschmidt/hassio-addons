@@ -118,6 +118,24 @@ Defaults to `/share/caddy/Caddyfile` if not specified.
 Allows you to specify the path to a custom `caddy` binary.
 Defaults to `/share/caddy/caddy` if not specified.
 
+### Option: `caddy_upgrade`
+
+Upgrade a custom caddy binary and its plugins during startup. Set it to `true`
+to enable it, `false` otherwise.
+Disabled by default.
+
+**Note**: The upgrade function applies to custom binaries only. Requires a
+custom Caddy binary of version 2.4 or higher.
+
+### Option: `caddy_fmt`
+
+Enables/Disables the function to format or prettify a Caddyfile. Set it to
+`true` to enable it, `false` otherwise.
+Disabled by default.
+
+**Note**: The format function requires a Caddyfile in a writable folder. In case
+the file is not writable, the result is printed to the log.
+
 ### Option: `args`
 
 Allows you to specify additional Caddy 2 command line arguments.
