@@ -1,0 +1,33 @@
+arch:
+- armhf
+- armv7
+- amd64
+- aarch64
+- i386
+boot: manual
+description: Download videos from youtube.com and a few more sites
+environment:
+  LOG_FORMAT: '{LEVEL}: {MESSAGE}'
+image: ghcr.io/einschmidt/youtube-dl/{arch}
+map:
+- share:rw
+name: youtube-dl
+options:
+  URL:
+  - https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+  global_options:
+  - -o /share/youtube-dl/%(title)s.%(ext)s
+  log_level: info
+  options: []
+schema:
+  URL:
+  - str
+  global_options:
+  - str
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  options:
+  - str
+slug: youtube-dl
+startup: once
+url: https://github.com/einschmidt/addon-youtube-dl
+version: 0.0.7
