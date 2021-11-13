@@ -1,0 +1,44 @@
+arch:
+- armhf
+- armv7
+- amd64
+- aarch64
+description: Open source web and proxy server with automatic HTTPS
+environment:
+  LOG_FORMAT: '{LEVEL}: {MESSAGE}'
+host_network: true
+image: ghcr.io/einschmidt/caddy-2/{arch}
+map:
+- share:rw
+- config
+- ssl:rw
+name: Caddy 2
+options:
+  args: []
+  env_vars: []
+  log_level: info
+  non_caddyfile_config:
+    destination: localhost
+    domain: mydomain.com
+    email: your@email.com
+    port: 8123
+schema:
+  args:
+  - str
+  caddy_fmt: bool?
+  caddy_upgrade: bool?
+  config_path: str?
+  custom_binary_path: str?
+  env_vars:
+  - name: str
+    value: str
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  non_caddyfile_config:
+    destination: str?
+    domain: str?
+    email: email?
+    port: port?
+slug: caddy-2
+startup: services
+url: https://github.com/einschmidt/addon-caddy-2
+version: 1.0.9
