@@ -1,47 +1,11 @@
 ## What’s changed
 
-## 🧰 Maintenance
+This update will introduce the STDIN_mode, allowing you to initiate downloads from within Home Assistant. The feature is currently optional and disabled by default. Read the docs for further information.
 
-- Centralize GitHub Action workflows @einschmidt (#82)
-- Switch json config to yaml @einschmidt (#83)
+## ✨ New features
+
+- Add STDIN mode @einschmidt (#85)
 
 ## ⬆️ Dependency updates
 
-- Bump docker/build-push-action from v2.3.0 to v2.4.0 @dependabot (#43)
-- Bump docker/setup-buildx-action from v1.1.1 to v1.1.2 @dependabot (#44)
-- Bump docker/setup-qemu-action from v1.0.1 to v1.0.2 @dependabot (#45)
-- Bump actions/cache from v2.1.4 to v2.1.5 @dependabot (#46)
-- Bump brpaz/hadolint-action from v1.3.1 to v1.4.0 @dependabot (#47)
-- Bump docker/setup-buildx-action from v1.1.2 to v1.2.0 @dependabot (#48)
-- Bump docker/setup-qemu-action from v1.0.2 to v1.1.0 @dependabot (#49)
-- Bump docker/setup-buildx-action from v1.2.0 to v1.3.0 @dependabot (#50)
-- Bump brpaz/hadolint-action from v1.4.0 to v1.5.0 @dependabot (#51)
-- Bump docker/login-action from 1 to 1.9.0 @dependabot (#52)
-- Bump actions/checkout from 2 to 2.3.4 @dependabot (#53)
-- Bump frenck/action-addon-linter from 2 to 2.1 @dependabot (#54)
-- Bump actions/stale from 3.0.18 to 3.0.19 @dependabot (#55)
-- Bump frenck/action-addon-information from 1.0.0 to 1.1 @dependabot (#56)
-- Bump micnncim/action-label-syncer from 1.2.0 to 1.3.0 @dependabot (#57)
-- Bump docker/setup-qemu-action from 1.1.0 to 1.2.0 @dependabot (#58)
-- Bump docker/build-push-action from 2.4.0 to 2.5.0 @dependabot (#59)
-- Bump actions/cache from 2.1.5 to 2.1.6 @dependabot (#60)
-- Bump frenck/action-addon-information from 1.1 to 1.2.2 @dependabot (#62)
-- Bump docker/login-action from 1.9.0 to 1.10.0 @dependabot (#63)
-- Bump docker/setup-buildx-action from 1.3.0 to 1.4.1 @dependabot (#64)
-- Bump docker/build-push-action from 2.5.0 to 2.6.1 @dependabot (#65)
-- Bump actions/stale from 3.0.19 to 4 @dependabot (#69)
-- Bump docker/setup-buildx-action from 1.4.1 to 1.5.1 @dependabot (#68)
-- Bump dessant/lock-threads from 2.0.3 to 2.1.1 @dependabot (#67)
-- Bump dessant/lock-threads from 2.1.1 to 2.1.2 @dependabot (#71)
-- Bump docker/build-push-action from 2.6.1 to 2.7.0 @dependabot (#72)
-- Bump frenck/action-addon-linter from 2.1 to 2.2 @dependabot (#70)
-- Bump frenck/action-addon-linter from 2.2 to 2.3 @dependabot (#73)
-- Bump docker/setup-buildx-action from 1.5.1 to 1.6.0 @dependabot (#74)
-- Bump creyD/prettier_action from 3.3 to 4.0 @dependabot (#75)
-- Bump frenck/action-addon-linter from 2.3 to 2.4 @dependabot (#76)
-- Bump actions/checkout from 2.3.4 to 2.3.5 @dependabot (#78)
-- Bump dessant/lock-threads from 2.1.2 to 3 @dependabot (#77)
-- Bump actions/checkout from 2.3.5 to 2.4.0 @dependabot (#81)
-- Bump frenck/action-addon-linter from 2.4 to 2.5 @dependabot (#79)
-- Bump frenck/action-addon-information from 1.2.2 to 1.3 @dependabot (#80)
-- Bump base image version to v10.2.2 @einschmidt (#84)
+- Bump base image version to v10.2.3 @einschmidt (#86)

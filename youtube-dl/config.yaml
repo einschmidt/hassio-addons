@@ -8,6 +8,7 @@ boot: manual
 description: Download videos from youtube.com and a few more sites
 environment:
   LOG_FORMAT: '{LEVEL}: {MESSAGE}'
+homeassistant_api: true
 image: ghcr.io/einschmidt/youtube-dl/{arch}
 map:
 - share:rw
@@ -20,6 +21,7 @@ options:
   log_level: info
   options: []
 schema:
+  STDIN_mode: bool?
   URL:
   - str
   global_options:
@@ -29,5 +31,6 @@ schema:
   - str
 slug: youtube-dl
 startup: once
+stdin: true
 url: https://github.com/einschmidt/addon-youtube-dl
-version: 0.0.7
+version: 0.1.0
