@@ -120,8 +120,8 @@ Defaults to `/share/caddy/caddy` if not specified.
 
 ### Option: `caddy_upgrade`
 
-Upgrade a custom caddy binary and its plugins during startup. Set it to `true`
-to enable it, `false` otherwise.
+Automatically upgrades a custom caddy binary and its plugins to the latest version,
+if necessary. Set it to `true` to enable it, `false` otherwise.
 Disabled by default.
 
 **Note**: The upgrade function applies to custom binaries only. Requires a
