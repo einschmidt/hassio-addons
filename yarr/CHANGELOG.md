@@ -2,13 +2,9 @@
 
 ## 🚀 Enhancements
 
-- Enable TLSv1.3 support @einschmidt (#85) (Thanks @michelebossa)
-
-## 🧰 Maintenance
-
-- Update CI Workflows @einschmidt (#81)
+- Upgrade yarr to v2.3 @einschmidt (#88)
 
 ## ⬆️ Dependency updates
 
-- Bump base image version to v11.0.1 @einschmidt (#83)
-- Update dependencies @einschmidt (#84)
+- Upgrade base image to v11.1.2 @einschmidt (#86)
+- Upgrade dependencies @einschmidt (#87)
