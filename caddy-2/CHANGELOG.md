@@ -1,5 +1,5 @@
 ## What’s changed
 
-## 🚀 Enhancements
+## ⬆️ Dependency updates
 
-- Upgrade caddy to v2.5.1 @einschmidt (#130)
+- Upgrade base image to v12.0.0 @einschmidt (#132)

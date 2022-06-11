@@ -98,6 +98,9 @@ which applies when Caddy doesn't find any `Caddyfile` at `config_path`.
 Defines the upstream address for the reverse proxy.
 For most cases, `localhost` should be fine.
 
+If you want to target an ipv4 or ipv6 address directly,
+you can use `127.0.0.1` or `::1` respectively.
+
 **Note**: This option will be used only for the default reverse proxy config,
 which applies when Caddy doesn't find any `Caddyfile` at `config_path`.
 
