@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- Upgrade base image to v12.0.0 @einschmidt (#132)
+- Upgrade caddy to v2.5.2 @einschmidt (#133)
