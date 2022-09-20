@@ -1,9 +1,9 @@
 ## What’s changed
 
-## 🧰 Maintenance
+## 🚀 Enhancements
 
-- Remove deprecated S6 scripts @einschmidt (#135)
+- Upgrade to Caddy v2.6.0 @einschmidt (#137)
 
 ## ⬆️ Dependency updates
 
-- Upgrade-base-image-to-v12.2.1 @einschmidt (#134)
+- Upgrade base image to v12.2.4 @einschmidt (#136)
