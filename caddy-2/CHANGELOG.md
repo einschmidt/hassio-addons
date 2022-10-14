@@ -2,4 +2,4 @@
 
 ## 🚀 Enhancements
 
-- Upgrade caddy to v2.6.1 @einschmidt (#138)
+- Upgrade caddy to v2.6.2 @einschmidt (#141)
