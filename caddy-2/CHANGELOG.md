@@ -1,5 +1,5 @@
 ## What’s changed
 
-## ⬆️ Dependency updates
+## ✨ New features
 
-- Upgrade base image to v13.0.0 @einschmidt (#145)
+- Migrate old-style base scripts s6-rc @einschmidt (#146)
