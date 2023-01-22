@@ -5,6 +5,7 @@ arch:
 - aarch64
 description: Yet another rss reader
 image: ghcr.io/einschmidt/yarr/{arch}
+init: false
 map:
 - share:rw
 - ssl
@@ -32,4 +33,4 @@ schema:
   ssl: bool
 slug: yarr
 url: https://github.com/einschmidt/addon-yarr
-version: 0.2.5
+version: 0.3.0

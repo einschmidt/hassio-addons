@@ -1,10 +1,11 @@
 ## What’s changed
 
-## 🚀 Enhancements
+## 🧰 Maintenance
 
-- Upgrade yarr to v2.3 @einschmidt (#88)
+- migrate old style base scripts s6-rc @einschmidt (#91)
+- Disable init config option @einschmidt (#92)
 
 ## ⬆️ Dependency updates
 
-- Upgrade base image to v11.1.2 @einschmidt (#86)
-- Upgrade dependencies @einschmidt (#87)
+- Upgrade base image to v13.1.1 @einschmidt (#89)
+- Upgrade Dependencies @einschmidt (#90)
