@@ -13,3 +13,7 @@ addons:
     repository: einschmidt/addon-youtube-dl
     target: youtube-dl
     image: ghcr.io/einschmidt/youtube-dl/{arch}
+  freshrss:
+    repository: einschmidt/addon-freshrss
+    target: freshrss
+    image: ghcr.io/einschmidt/freshrss/{arch}
