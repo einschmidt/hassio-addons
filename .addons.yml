@@ -17,3 +17,4 @@ addons:
     repository: einschmidt/addon-freshrss
     target: freshrss
     image: ghcr.io/einschmidt/freshrss/{arch}
+    
