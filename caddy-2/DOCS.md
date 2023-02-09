@@ -137,7 +137,7 @@ Enables/Disables the function to format or prettify a Caddyfile. Set it to
 Disabled by default.
 
 **Note**: The format function requires a Caddyfile in a writable folder. In case
-the file is not writable, the result is printed to the log.
+the file is not writable, formatting will be skipped.
 
 ### Option: `args`
 
