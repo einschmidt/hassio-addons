@@ -27,7 +27,7 @@ Open source web and proxy server with automatic HTTPS
 
 [:books: Caddy 2 add-on documentation][addon-doc-caddy-2]
 
-### &#10003; [freshrss][addon-freshrss]
+### &#10003; [FreshRSS][addon-freshrss]
 
 ![Latest Version][freshrss-version-shield]
 ![Supports armhf Architecture][freshrss-armhf-shield]
@@ -38,7 +38,7 @@ Open source web and proxy server with automatic HTTPS
 
 A free, self-hostable feed aggregator
 
-[:books: freshrss add-on documentation][addon-doc-freshrss]
+[:books: FreshRSS add-on documentation][addon-doc-freshrss]
 
 ### &#10003; [yarr!][addon-yarr]
 
