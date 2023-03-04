@@ -9,7 +9,7 @@ image: ghcr.io/einschmidt/freshrss/{arch}
 init: false
 map:
 - ssl
-name: freshrss
+name: FreshRSS
 options:
   base_url: ''
   certfile: fullchain.pem
@@ -28,4 +28,4 @@ schema:
   ssl: bool
 slug: freshrss
 url: https://github.com/einschmidt/addon-freshrss
-version: 0.1.0
+version: 0.1.1

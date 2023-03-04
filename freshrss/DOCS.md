@@ -50,7 +50,7 @@ Address at which the FreshRSS instance will be reachable.
 
 ### Option: `ssl`
 
-Enables/Disables SSL (HTTPS) on the web interface of yarr!
+Enables/Disables SSL (HTTPS) on the web interface!
 Set it `true` to enable it, `false` otherwise.
 
 ### Option: `certfile`
