@@ -1,5 +1,5 @@
 name: Caddy 2
-version: 1.5.0
+version: 1.5.1
 slug: caddy-2
 description: Open source web and proxy server with automatic HTTPS
 url: https://github.com/einschmidt/addon-caddy-2
