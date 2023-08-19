@@ -126,10 +126,10 @@ SOFTWARE.
 [freshrss-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [freshrss-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [freshrss-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[addon-yarr]: https://github.com/einschmidt/addon-yarr/tree/v0.3.0
-[addon-doc-yarr]: https://github.com/einschmidt/addon-yarr/blob/v0.3.0/README.md
+[addon-yarr]: https://github.com/einschmidt/addon-yarr/tree/v0.3.1
+[addon-doc-yarr]: https://github.com/einschmidt/addon-yarr/blob/v0.3.1/README.md
 [yarr-issue]: https://github.com/einschmidt/addon-yarr/issues
-[yarr-version-shield]: https://img.shields.io/badge/version-v0.3.0-blue.svg
+[yarr-version-shield]: https://img.shields.io/badge/version-v0.3.1-blue.svg
 [yarr-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [yarr-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [yarr-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
