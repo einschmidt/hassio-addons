@@ -1,31 +1,31 @@
+name: FreshRSS
+version: 0.2.0
+slug: freshrss
+description: A free, self-hostable feed aggregator
+url: https://github.com/einschmidt/addon-freshrss
+panel_icon: mdi:rss-box
 arch:
 - i386
 - armhf
 - armv7
 - amd64
 - aarch64
-description: A free, self-hostable feed aggregator
-image: ghcr.io/einschmidt/freshrss/{arch}
-init: false
-map:
-- ssl
-name: FreshRSS
-options:
-  base_url: ''
-  certfile: fullchain.pem
-  keyfile: privkey.pem
-  ssl: false
-panel_icon: mdi:rss-box
 ports:
   80/tcp: 7077
 ports_description:
   80/tcp: Web interface
+init: false
+map:
+- ssl
+options:
+  base_url: ''
+  ssl: false
+  certfile: fullchain.pem
+  keyfile: privkey.pem
 schema:
-  base_url: str
-  certfile: str
-  keyfile: str
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   ssl: bool
-slug: freshrss
-url: https://github.com/einschmidt/addon-freshrss
-version: 0.1.1
+  certfile: str
+  keyfile: str
+  base_url: str
+image: ghcr.io/einschmidt/freshrss/{arch}
