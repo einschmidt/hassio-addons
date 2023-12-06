@@ -53,19 +53,6 @@ Yet another rss reader
 
 [:books: yarr! add-on documentation][addon-doc-yarr]
 
-### &#10003; [youtube-dl][addon-youtube-dl]
-
-![Latest Version][youtube-dl-version-shield]
-![Supports armhf Architecture][youtube-dl-armhf-shield]
-![Supports armv7 Architecture][youtube-dl-armv7-shield]
-![Supports aarch64 Architecture][youtube-dl-aarch64-shield]
-![Supports amd64 Architecture][youtube-dl-amd64-shield]
-![Supports i386 Architecture][youtube-dl-i386-shield]
-
-Download videos from youtube.com and a few more sites
-
-[:books: youtube-dl add-on documentation][addon-doc-youtube-dl]
-
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format

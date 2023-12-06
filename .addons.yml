@@ -9,10 +9,6 @@ addons:
     repository: einschmidt/addon-yarr
     target: yarr
     image: ghcr.io/einschmidt/yarr/{arch}
-  youtube-dl:
-    repository: einschmidt/addon-youtube-dl
-    target: youtube-dl
-    image: ghcr.io/einschmidt/youtube-dl/{arch}
   freshrss:
     repository: einschmidt/addon-freshrss
     target: freshrss
