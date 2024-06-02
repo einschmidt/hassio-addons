@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update caddyserver/caddy to v2.8.2 @renovate (#215)
+- ⬆️ Update caddyserver/caddy to v2.8.4 @renovate (#217)
