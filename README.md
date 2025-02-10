@@ -40,6 +40,19 @@ A free, self-hostable feed aggregator
 
 [:books: FreshRSS add-on documentation][addon-doc-freshrss]
 
+### &#10003; [Pocket ID][addon-pocket-id]
+
+![Latest Version][pocket-id-version-shield]
+![Supports armhf Architecture][pocket-id-armhf-shield]
+![Supports armv7 Architecture][pocket-id-armv7-shield]
+![Supports aarch64 Architecture][pocket-id-aarch64-shield]
+![Supports amd64 Architecture][pocket-id-amd64-shield]
+![Supports i386 Architecture][pocket-id-i386-shield]
+
+Simple OIDC provider for passkey authentication
+
+[:books: Pocket ID add-on documentation][addon-doc-pocket-id]
+
 ### &#10003; [yarr!][addon-yarr]
 
 ![Latest Version][yarr-version-shield]
@@ -113,6 +126,15 @@ SOFTWARE.
 [freshrss-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [freshrss-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [freshrss-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[addon-pocket-id]: https://github.com/einschmidt/addon-pocket-id/tree/v0.1.0
+[addon-doc-pocket-id]: https://github.com/einschmidt/addon-pocket-id/blob/v0.1.0/README.md
+[pocket-id-issue]: https://github.com/einschmidt/addon-pocket-id/issues
+[pocket-id-version-shield]: https://img.shields.io/badge/version-v0.1.0-blue.svg
+[pocket-id-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[pocket-id-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[pocket-id-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[pocket-id-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[pocket-id-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-yarr]: https://github.com/einschmidt/addon-yarr/tree/v0.3.1
 [addon-doc-yarr]: https://github.com/einschmidt/addon-yarr/blob/v0.3.1/README.md
 [yarr-issue]: https://github.com/einschmidt/addon-yarr/issues
