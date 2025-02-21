@@ -1,5 +1,5 @@
 ## What’s changed
 
-## ✨ New features
+## 🐛 Bug fixes
 
-- Initial release
+- Fix bug in template file @einschmidt (#4)
