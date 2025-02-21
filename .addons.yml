@@ -17,3 +17,7 @@ addons:
     repository: einschmidt/addon-pocket-id
     target: pocket-id
     image: ghcr.io/einschmidt/pocket-id/{arch}
+  authelia:
+    repository: einschmidt/addon-authelia
+    target: authelia
+    image: ghcr.io/einschmidt/authelia/{arch}
