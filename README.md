@@ -14,6 +14,19 @@ https://github.com/einschmidt/hassio-addons
 
 ## Add-ons provided by this repository
 
+### &#10003; [Authelia][addon-authelia]
+
+![Latest Version][authelia-version-shield]
+![Supports armhf Architecture][authelia-armhf-shield]
+![Supports armv7 Architecture][authelia-armv7-shield]
+![Supports aarch64 Architecture][authelia-aarch64-shield]
+![Supports amd64 Architecture][authelia-amd64-shield]
+![Supports i386 Architecture][authelia-i386-shield]
+
+Authentication and Authorization Server
+
+[:books: Authelia add-on documentation][addon-doc-authelia]
+
 ### &#10003; [Caddy 2][addon-caddy-2]
 
 ![Latest Version][caddy-2-version-shield]
@@ -108,6 +121,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[addon-authelia]: https://github.com/einschmidt/addon-authelia/tree/v0.1.0
+[addon-doc-authelia]: https://github.com/einschmidt/addon-authelia/blob/v0.1.0/README.md
+[authelia-issue]: https://github.com/einschmidt/addon-authelia/issues
+[authelia-version-shield]: https://img.shields.io/badge/version-v0.1.0-blue.svg
+[authelia-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[authelia-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[authelia-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[authelia-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[authelia-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-caddy-2]: https://github.com/einschmidt/addon-caddy-2/tree/v2.0.2
 [addon-doc-caddy-2]: https://github.com/einschmidt/addon-caddy-2/blob/v2.0.2/README.md
 [caddy-2-issue]: https://github.com/einschmidt/addon-caddy-2/issues
