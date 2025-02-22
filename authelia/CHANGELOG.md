@@ -1,3 +1,3 @@
 ## What’s changed
 
-- Add apparmor profile @einschmidt (#5)
+- Fix apparmor issue by removing apparmor file for now
