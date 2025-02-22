@@ -1,5 +1,3 @@
 ## What’s changed
 
-## 🐛 Bug fixes
-
-- Fix bug in template file @einschmidt (#4)
+- Add apparmor profile @einschmidt (#5)
