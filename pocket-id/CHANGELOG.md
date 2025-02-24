@@ -1,7 +1,5 @@
 ## What’s changed
 
-Update to pocket-id:v0.35.1
-
 ## ⬆️ Dependency updates
 
-- ⬆️: Add semversioning to renovate config
+- ⬆️ Update ghcr.io/pocket-id/pocket-id Docker tag to v0.35.2 @[renovate[bot]](https://github.com/apps/renovate) (#13)
