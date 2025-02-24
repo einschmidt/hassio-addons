@@ -1,24 +1,18 @@
 ## What’s changed
 
-Update FreshRSS to v1.25.0
-
-## 🧰 Maintenance
-
-- Adapt renovate for alpine v3.21 @einschmidt (#99)
-- Fix php to v8.3 @einschmidt (#104)
+- ⬆️ Update FreshRSS/FreshRSS to v1.26.0 @[renovate[bot]](https://github.com/apps/renovate) (#117)
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update alpine_3_20/tzdata to v2024b-r0 @renovate (#88)
-- ⬆️ Update Add-on base image to v16.3.0 @renovate (#89)
-- ⬆️ Update Add-on base image to v16.3.1 @renovate (#90)
-- ⬆️ Update Add-on base image to v16.3.2 @renovate (#91)
-- ⬆️ Update Add-on base image to v16.3.3 @renovate (#92)
-- ⬆️ Update Add-on base image to v16.3.4 @renovate (#93)
-- ⬆️ Update Add-on base image to v16.3.5 @renovate (#94)
-- ⬆️ Update Add-on base image to v16.3.6 @renovate (#95)
-- ⬆️ Update Add-on base image to v17 (major) @renovate (#96)
-- ⬆️ Update alpine_3_21/nginx to v1.26.2-r3 @renovate (#100)
-- ⬆️ Update alpine_3_21/tzdata to v2024b-r1 @renovate (#101)
-- ⬆️ Update alpine_3_21/git to v2.47.1-r0 @renovate (#102)
-- ⬆️ Update FreshRSS/FreshRSS to v1.25.0 @renovate (#98)
+- ⬆️ Update Add-on base image to v17.0.2 @[renovate[bot]](https://github.com/apps/renovate) (#105)
+- ⬆️ Update alpine_3_21/nginx to v1.26.2-r4 @[renovate[bot]](https://github.com/apps/renovate) (#106)
+- ⬆️ Update Add-on base image to v17.1.0 @[renovate[bot]](https://github.com/apps/renovate) (#107)
+- ⬆️ Update alpine_3_21/git to v2.47.2-r0 @[renovate[bot]](https://github.com/apps/renovate) (#108)
+- ⬆️ Update Add-on base image to v17.1.1 @[renovate[bot]](https://github.com/apps/renovate) (#109)
+- ⬆️ Update Add-on base image to v17.1.2 @[renovate[bot]](https://github.com/apps/renovate) (#110)
+- ⬆️ Update Add-on base image to v17.1.3 @[renovate[bot]](https://github.com/apps/renovate) (#111)
+- ⬆️ Update Add-on base image to v17.1.4 @[renovate[bot]](https://github.com/apps/renovate) (#112)
+- ⬆️ Update alpine_3_21/tzdata to v2025 @[renovate[bot]](https://github.com/apps/renovate) (#113)
+- ⬆️ Update Add-on base image to v17.1.5 @[renovate[bot]](https://github.com/apps/renovate) (#114)
+- ⬆️ Update Add-on base image to v17.2.0 @[renovate[bot]](https://github.com/apps/renovate) (#115)
+- ⬆️ Update Add-on base image to v17.2.1 @[renovate[bot]](https://github.com/apps/renovate) (#116)
