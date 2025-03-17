@@ -1,3 +1,6 @@
 ## What’s changed
 
-- Fix apparmor issue by removing apparmor file for now
+## ⬆️ Dependency updates
+
+- ⬆️: migrate renovate config @[renovate[bot]](https://github.com/apps/renovate) (#6)
+- ⬆️ Update authelia/authelia to v4.39.0 @[renovate[bot]](https://github.com/apps/renovate) (#7)
