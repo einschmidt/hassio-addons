@@ -1,9 +1,5 @@
 ## What’s changed
 
-Switched to Debian based images in order to avoid glibc errors based on Alpines musl implemention.
+## ⬆️ Dependency updates
 
-In that context, added config validation to startup script.
-
-## 🐛 Bug fixes
-
-- Switch to Debian base images @einschmidt (#9)
+- ⬆️ Update authelia/authelia to v4.39.1 @[renovate[bot]](https://github.com/apps/renovate) (#10)
