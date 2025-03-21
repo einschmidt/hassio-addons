@@ -1,5 +1,5 @@
 name: FreshRSS
-version: 0.3.2
+version: 0.4.0
 slug: freshrss
 description: A free, self-hostable feed aggregator
 url: https://github.com/einschmidt/addon-freshrss
@@ -16,7 +16,9 @@ ports_description:
   80/tcp: Web interface
 init: false
 map:
-- ssl
+- type: ssl
+- type: addon_config
+  read_only: false
 options:
   base_url: ''
   ssl: false

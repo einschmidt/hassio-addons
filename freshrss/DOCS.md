@@ -64,3 +64,14 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default_
+
+## Third-Party Extensions
+
+This add-on allows you to store and manage FreshRSS extensions using the **addon_config** folder.
+
+- This folder is mapped inside the add-on from the **Home Assistant addon_config directory**.
+- If installed from a GitHub repository, it is stored under:
+
+```
+/addon_configs/{REPO}_freshrss/extensions
+```
