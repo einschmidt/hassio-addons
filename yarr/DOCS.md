@@ -1,6 +1,6 @@
 # Home Assistant Add-on: yarr
 
-Yet another rss reader
+Yet another rss reader!
 
 ## Installation
 
