@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update ghcr.io/pocket-id/pocket-id Docker tag to v0.51.1 @[renovate[bot]](https://github.com/apps/renovate) (#35)
+- ⬆️ Update ghcr.io/pocket-id/pocket-id Docker tag to v0.52.0 @[renovate[bot]](https://github.com/apps/renovate) (#36)

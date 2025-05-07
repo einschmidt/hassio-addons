@@ -148,10 +148,10 @@ SOFTWARE.
 [freshrss-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [freshrss-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [freshrss-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[addon-pocket-id]: https://github.com/einschmidt/addon-pocket-id/tree/v0.2.14
-[addon-doc-pocket-id]: https://github.com/einschmidt/addon-pocket-id/blob/v0.2.14/README.md
+[addon-pocket-id]: https://github.com/einschmidt/addon-pocket-id/tree/v0.2.15
+[addon-doc-pocket-id]: https://github.com/einschmidt/addon-pocket-id/blob/v0.2.15/README.md
 [pocket-id-issue]: https://github.com/einschmidt/addon-pocket-id/issues
-[pocket-id-version-shield]: https://img.shields.io/badge/version-v0.2.14-blue.svg
+[pocket-id-version-shield]: https://img.shields.io/badge/version-v0.2.15-blue.svg
 [pocket-id-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [pocket-id-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [pocket-id-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
