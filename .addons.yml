@@ -21,3 +21,7 @@ addons:
     repository: einschmidt/addon-authelia
     target: authelia
     image: ghcr.io/einschmidt/authelia/{arch}
+  fusion:
+    repository: einschmidt/addon-fusion
+    target: fusion
+    image: ghcr.io/einschmidt/fusion/{arch}
