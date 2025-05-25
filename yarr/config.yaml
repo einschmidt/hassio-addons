@@ -1,5 +1,5 @@
 name: yarr!
-version: 0.4.0
+version: 0.5.0
 slug: yarr
 description: Yet another rss reader
 url: https://github.com/einschmidt/addon-yarr
@@ -14,6 +14,8 @@ ports:
 ports_description:
   80/tcp: Web interface
 init: false
+ingress: true
+ingress_stream: true
 map:
 - share:rw
 - ssl
