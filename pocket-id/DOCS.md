@@ -20,14 +20,13 @@ This add-on supports the following architectures:
 Example add-on configuration:
 
 ```yaml
-PUBLIC_APP_URL: https://id.domain.com
+APP_URL: https://id.domain.com
 TRUST_PROXY: true
-MAXMIND_LICENSE_KEY: ""
 ```
 
-### Option: `PUBLIC_APP_URL`
+### Option: `APP_URL`
 
-The `PUBLIC_APP_URL` option sets the public-facing URL of the Pocket ID instance. This must be HTTPS and accessible by clients for authentication to work properly.
+The `APP_URL` option sets the public-facing URL of the Pocket ID instance. This must be HTTPS and accessible by clients for authentication to work properly.
 
 ### Option: `TRUST_PROXY`
 
@@ -42,11 +41,11 @@ Optional license key for MaxMind GeoIP database integration. If provided, it ena
 1. **Install the add-on** in Home Assistant.
 2. **Configure** the options as needed via the add-on settings.
 3. **Start the add-on** to launch Pocket ID.
-4. **Use the configured `PUBLIC_APP_URL`** to integrate with your OIDC-compatible applications.
+4. **Use the configured `APP_URL`** to integrate with your OIDC-compatible applications.
 
 ## Troubleshooting
 
-- Ensure that `PUBLIC_APP_URL` is correctly set and accessible.
+- Ensure that `APP_URL` is correctly set and accessible.
 - If using a reverse proxy, set `TRUST_PROXY` to `true` to avoid authentication issues.
 - If geolocation features are required, obtain and configure a MaxMind license key.
 
