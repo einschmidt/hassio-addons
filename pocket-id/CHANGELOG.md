@@ -1,5 +1,5 @@
 ## What’s changed
 
-## ⬆️ Dependency updates
+## 🐛 Bug fixes
 
-- ⬆️ Update pocket-id/pocket-id to v1.1.0 @[renovate[bot]](https://github.com/apps/renovate) (#40)
+- Reintroduce custom data mapping @einschmidt (#42)
