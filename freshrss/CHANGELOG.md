@@ -1,9 +1,5 @@
 ## What’s changed
 
-## 🐛 Bug fixes
-
-- Fix base url configuration @einschmidt (#130)
-
 ## ⬆️ Dependency updates
 
-- ⬆️ Update Add-on base image to v17.2.5 @[renovate[bot]](https://github.com/apps/renovate) (#127)
+- ⬆️ Update FreshRSS/FreshRSS to v1.26.3 @[renovate[bot]](https://github.com/apps/renovate) (#131)
