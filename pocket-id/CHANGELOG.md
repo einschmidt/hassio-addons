@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update pocket-id/pocket-id to v1.4.0 @[renovate[bot]](https://github.com/apps/renovate) (#45)
+- ⬆️ Update pocket-id/pocket-id to v1.4.1 @[renovate[bot]](https://github.com/apps/renovate) (#46)
