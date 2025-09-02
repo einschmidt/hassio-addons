@@ -1,5 +1,5 @@
 ## What’s changed
 
-## 🐛 Bug fixes
+## ⬆️ Dependency updates
 
-- Adapt Dockerfile to match binary name in release @einschmidt (#22)
+- ⬆️ Update authelia/authelia to v4.39.8 @[renovate[bot]](https://github.com/apps/renovate) (#23)
