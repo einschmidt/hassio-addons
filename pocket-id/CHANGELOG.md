@@ -1,6 +1,5 @@
 ## What’s changed
 
-## ⬆️ Dependency updates
+## 🐛 Bug fixes
 
-- ⬆️ Update Add-on base image to v18.1.1 @[renovate[bot]](https://github.com/apps/renovate) (#63)
-- ⬆️ Update pocket-id/pocket-id to v1.11.1 @[renovate[bot]](https://github.com/apps/renovate) (#64)
+- Set log level for pocket-id inside container @einschmidt (#66)
