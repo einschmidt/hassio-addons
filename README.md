@@ -170,10 +170,10 @@ SOFTWARE.
 [fusion-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [fusion-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [fusion-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[addon-pocket-id]: https://github.com/einschmidt/addon-pocket-id/tree/v1.1.14
-[addon-doc-pocket-id]: https://github.com/einschmidt/addon-pocket-id/blob/v1.1.14/README.md
+[addon-pocket-id]: https://github.com/einschmidt/addon-pocket-id/tree/v1.1.15
+[addon-doc-pocket-id]: https://github.com/einschmidt/addon-pocket-id/blob/v1.1.15/README.md
 [pocket-id-issue]: https://github.com/einschmidt/addon-pocket-id/issues
-[pocket-id-version-shield]: https://img.shields.io/badge/version-v1.1.14-blue.svg
+[pocket-id-version-shield]: https://img.shields.io/badge/version-v1.1.15-blue.svg
 [pocket-id-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [pocket-id-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [pocket-id-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
