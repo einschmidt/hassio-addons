@@ -185,8 +185,8 @@ SOFTWARE.
 [yarr-version-shield]: https://img.shields.io/badge/version-v0.5.1-blue.svg
 [yarr-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [yarr-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[yarr-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[yarr-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[yarr-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[yarr-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [yarr-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [issue]: https://github.com/einschmidt/hassio-addons/issues
 [license-shield]: https://img.shields.io/github/license/einschmidt/hassio-addons.svg
