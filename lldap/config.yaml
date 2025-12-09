@@ -1,0 +1,26 @@
+name: LLDAP
+version: 0.1.0
+slug: lldap
+description: Lightweight Authentication Server
+url: https://github.com/einschmidt/addon-lldap
+arch:
+- amd64
+- aarch64
+init: false
+ports:
+  3890/tcp: 3890
+  17170/tcp: 17170
+ports_description:
+  3890/tcp: LDAP Port
+  17170/tcp: Web UI
+map:
+- addon_config:rw
+options:
+  log_level: info
+  domain: example.com
+  ldap_user_pass: ''
+schema:
+  log_level: list(debug|info|warn|error)
+  domain: str
+  ldap_user_pass: password
+image: ghcr.io/einschmidt/lldap/{arch}

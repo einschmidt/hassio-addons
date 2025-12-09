@@ -66,6 +66,19 @@ Lightweight RSS feed aggregator and reader
 
 [:books: Fusion add-on documentation][addon-doc-fusion]
 
+### &#10003; [LLDAP][addon-lldap]
+
+![Latest Version][lldap-version-shield]
+![Supports armhf Architecture][lldap-armhf-shield]
+![Supports armv7 Architecture][lldap-armv7-shield]
+![Supports aarch64 Architecture][lldap-aarch64-shield]
+![Supports amd64 Architecture][lldap-amd64-shield]
+![Supports i386 Architecture][lldap-i386-shield]
+
+Lightweight Authentication Server
+
+[:books: LLDAP add-on documentation][addon-doc-lldap]
+
 ### &#10003; [Pocket ID][addon-pocket-id]
 
 ![Latest Version][pocket-id-version-shield]
@@ -170,6 +183,15 @@ SOFTWARE.
 [fusion-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [fusion-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [fusion-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+[addon-lldap]: https://github.com/einschmidt/addon-lldap/tree/v0.1.0
+[addon-doc-lldap]: https://github.com/einschmidt/addon-lldap/blob/v0.1.0/README.md
+[lldap-issue]: https://github.com/einschmidt/addon-lldap/issues
+[lldap-version-shield]: https://img.shields.io/badge/version-v0.1.0-blue.svg
+[lldap-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[lldap-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[lldap-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[lldap-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[lldap-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-pocket-id]: https://github.com/einschmidt/addon-pocket-id/tree/v1.1.25
 [addon-doc-pocket-id]: https://github.com/einschmidt/addon-pocket-id/blob/v1.1.25/README.md
 [pocket-id-issue]: https://github.com/einschmidt/addon-pocket-id/issues
