@@ -25,3 +25,8 @@ addons:
     repository: einschmidt/addon-fusion
     target: fusion
     image: ghcr.io/einschmidt/fusion/{arch}
+  lldap:
+    repository: einschmidt/addon-lldap
+    target: lldap
+    image: ghcr.io/einschmidt/addon-lldap
+    
