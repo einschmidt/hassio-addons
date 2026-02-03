@@ -1,4 +1,4 @@
-# Home Assistant Add-on: yarr
+# Home Assistant App: yarr
 
 Yet another rss reader!
 
@@ -10,15 +10,15 @@ Add this repository to your [Hass.io](https://home-assistant.io/hassio/) instanc
 
 If you have trouble you can follow the [official docs](https://home-assistant.io/hassio/installing_third_party_addons/).
 
-Then install the "yarr!" add-on.
+Then install the "yarr!" app.
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on when the configuration is changed._
+**Note**: _Remember to restart the app when the configuration is changed._
 
 ### Option: `log_level`
 
-The `log_level` option controls the level of log output by the addon and can
+The `log_level` option controls the level of log output by the app and can
 be changed to be more or less verbose, which might be useful when you are
 dealing with an unknown issue. Possible values are:
 
@@ -27,7 +27,7 @@ dealing with an unknown issue. Possible values are:
 - `info`: Normal (usually) interesting events.
 - `warning`: Exceptional occurrences that are not errors.
 - `error`: Runtime errors that do not require immediate action.
-- `fatal`: Something went terribly wrong. Add-on becomes unusable.
+- `fatal`: Something went terribly wrong. App becomes unusable.
 
 Please note that each level automatically includes log messages from a
 more severe level, e.g., `debug` also shows `info` messages. By default,
@@ -65,5 +65,5 @@ This option allows you to override the default db file storage path. For
 example, use a different configuration like `/share/yarr/yarr.db` instead of
 `/data/yarr.db`.
 
-When not configured, the addon will automatically use the
+When not configured, the app will automatically use the
 default: `/data/yarr.db`

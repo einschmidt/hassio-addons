@@ -9,4 +9,4 @@ The storage is backed by SQLite.
 
 ![yarr preview][promo]
 
-[promo]: https://github.com/einschmidt/addon-yarr/raw/main/images/promo.png
+[promo]: https://github.com/einschmidt/app-yarr/raw/main/images/promo.png

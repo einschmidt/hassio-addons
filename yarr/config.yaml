@@ -1,8 +1,8 @@
 name: yarr!
-version: 1.0.0
+version: 1.0.1
 slug: yarr
 description: Yet another rss reader
-url: https://github.com/einschmidt/addon-yarr
+url: https://github.com/einschmidt/app-yarr
 panel_icon: mdi:rss-box
 arch:
 - amd64
