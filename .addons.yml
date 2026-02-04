@@ -22,9 +22,9 @@ addons:
     target: authelia
     image: ghcr.io/einschmidt/authelia/{arch}
   fusion:
-    repository: einschmidt/addon-fusion
+    repository: einschmidt/app-fusion
     target: fusion
-    image: ghcr.io/einschmidt/fusion/{arch}
+    image: ghcr.io/einschmidt/fusion
   lldap:
     repository: einschmidt/addon-lldap
     target: lldap
