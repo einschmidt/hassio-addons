@@ -174,9 +174,9 @@ SOFTWARE.
 [freshrss-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [freshrss-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [freshrss-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[addon-fusion]: https://github.com/einschmidt/addon-fusion/tree/v0.1.0
-[addon-doc-fusion]: https://github.com/einschmidt/addon-fusion/blob/v0.1.0/README.md
-[fusion-issue]: https://github.com/einschmidt/addon-fusion/issues
+[addon-fusion]: https://github.com/einschmidt/app-fusion/tree/v0.1.0
+[addon-doc-fusion]: https://github.com/einschmidt/app-fusion/blob/v0.1.0/README.md
+[fusion-issue]: https://github.com/einschmidt/app-fusion/issues
 [fusion-version-shield]: https://img.shields.io/badge/version-v0.1.0-blue.svg
 [fusion-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [fusion-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
