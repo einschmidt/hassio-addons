@@ -1,6 +1,6 @@
-# Home Assistant Add-on: Fusion
+# Home Assistant App: Fusion
 
-Home Assistant add-on for [Fusion](https://github.com/0x2E/fusion).
+Home Assistant app for [Fusion](https://github.com/0x2E/fusion).
 
 ## About
 
