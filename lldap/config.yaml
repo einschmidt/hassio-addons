@@ -1,8 +1,8 @@
 name: LLDAP
-version: 0.1.1
+version: 0.1.2
 slug: lldap
 description: Lightweight Authentication Server
-url: https://github.com/einschmidt/addon-lldap
+url: https://github.com/einschmidt/app-lldap
 arch:
 - amd64
 - aarch64
@@ -23,4 +23,4 @@ schema:
   log_level: list(debug|info|warn|error)
   domain: str
   ldap_user_pass: password
-image: ghcr.io/einschmidt/lldap/{arch}
+image: ghcr.io/einschmidt/lldap

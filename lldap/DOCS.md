@@ -1,4 +1,4 @@
-# Home Assistant Add-on: LLDAP
+# Home Assistant App: LLDAP
 
 LLDAP is a lightweight authentication server that provides a simplified LDAP interface for authentication.
 
@@ -7,9 +7,9 @@ Project: https://github.com/lldap/lldap
 ## Installation
 
 1. Add this repository to your Home Assistant instance
-2. Install the LLDAP add-on
-3. Configure the add-on (see Configuration section)
-4. Start the add-on
+2. Install the LLDAP app
+3. Configure the app (see Configuration section)
+4. Start the app
 
 ## Configuration
 
@@ -33,7 +33,7 @@ Password for the LDAP admin user. **Required** - set a strong password.
 
 ## Usage
 
-After starting the add-on:
+After starting the app:
 
 - Web UI: `http://homeassistant.local:17170`
 - LDAP Port: `3890`
@@ -41,4 +41,4 @@ After starting the add-on:
 
 ## Support
 
-For issues and feature requests, visit: https://github.com/einschmidt/addon-lldap
+For issues and feature requests, visit: https://github.com/einschmidt/app-lldap

@@ -1,6 +1,6 @@
-# Home Assistant Add-on: LLDAP
+# Home Assistant App: LLDAP
 
-Home Assistant add-on for LDAP based on [LLDAP](https://github.com/lldap/lldap).
+Home Assistant app for LDAP based on [LLDAP](https://github.com/lldap/lldap).
 
 ## About
 
