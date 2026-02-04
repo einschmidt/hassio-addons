@@ -6,9 +6,9 @@ addons:
     target: caddy-2
     image: ghcr.io/einschmidt/caddy-2/{arch}
   yarr:
-    repository: einschmidt/addon-yarr
+    repository: einschmidt/app-yarr
     target: yarr
-    image: ghcr.io/einschmidt/yarr/{arch}
+    image: ghcr.io/einschmidt/yarr
   freshrss:
     repository: einschmidt/addon-freshrss
     target: freshrss
