@@ -147,9 +147,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[addon-authelia]: https://github.com/einschmidt/addon-authelia/tree/v0.1.22
-[addon-doc-authelia]: https://github.com/einschmidt/addon-authelia/blob/v0.1.22/README.md
-[authelia-issue]: https://github.com/einschmidt/addon-authelia/issues
+[addon-authelia]: https://github.com/einschmidt/app-authelia/tree/v0.1.22
+[addon-doc-authelia]: https://github.com/einschmidt/app-authelia/blob/v0.1.22/README.md
+[authelia-issue]: https://github.com/einschmidt/app-authelia/issues
 [authelia-version-shield]: https://img.shields.io/badge/version-v0.1.22-blue.svg
 [authelia-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [authelia-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
@@ -183,9 +183,9 @@ SOFTWARE.
 [fusion-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [fusion-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [fusion-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[addon-lldap]: https://github.com/einschmidt/addon-lldap/tree/v0.1.1
-[addon-doc-lldap]: https://github.com/einschmidt/addon-lldap/blob/v0.1.1/README.md
-[lldap-issue]: https://github.com/einschmidt/addon-lldap/issues
+[addon-lldap]: https://github.com/einschmidt/app-lldap/tree/v0.1.1
+[addon-doc-lldap]: https://github.com/einschmidt/app-lldap/blob/v0.1.1/README.md
+[lldap-issue]: https://github.com/einschmidt/app-lldap/issues
 [lldap-version-shield]: https://img.shields.io/badge/version-v0.1.1-blue.svg
 [lldap-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [lldap-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
