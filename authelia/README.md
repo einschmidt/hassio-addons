@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Authelia
+# Home Assistant App: Authelia
 
 The Single Sign-On Multi-Factor portal for web apps
 
