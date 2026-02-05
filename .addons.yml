@@ -14,9 +14,9 @@ addons:
     target: freshrss
     image: ghcr.io/einschmidt/freshrss
   pocket-id:
-    repository: einschmidt/addon-pocket-id
+    repository: einschmidt/app-pocket-id
     target: pocket-id
-    image: ghcr.io/einschmidt/pocket-id/{arch}
+    image: ghcr.io/einschmidt/pocket-id
   authelia:
     repository: einschmidt/app-authelia
     target: authelia
