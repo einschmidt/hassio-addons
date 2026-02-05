@@ -1,8 +1,8 @@
 name: FreshRSS
-version: 1.0.1
+version: 1.0.2
 slug: freshrss
 description: A free, self-hostable feed aggregator
-url: https://github.com/einschmidt/addon-freshrss
+url: https://github.com/einschmidt/app-freshrss
 panel_icon: mdi:rss-box
 arch:
 - amd64
@@ -27,4 +27,4 @@ schema:
   certfile: str
   keyfile: str
   base_url: str
-image: ghcr.io/einschmidt/freshrss/{arch}
+image: ghcr.io/einschmidt/freshrss

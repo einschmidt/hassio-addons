@@ -1,4 +1,4 @@
-# Home Assistant Add-on: freshrss
+# Home Assistant App: freshrss
 
 A free, self-hostable feed aggregator.
 
@@ -9,4 +9,4 @@ It is lightweight, easy to work with, powerful, and customizable.
 
 ![freshrss preview][preview]
 
-[preview]: https://github.com/einschmidt/addon-freshrss/raw/main/images/freshrss.webp
+[preview]: https://github.com/einschmidt/app-freshrss/raw/main/images/freshrss.webp

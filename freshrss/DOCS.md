@@ -1,4 +1,4 @@
-# Home Assistant Add-on: FreshRSS
+# Home Assistant App: FreshRSS
 
 A free, self-hostable feed aggregator.
 
@@ -10,13 +10,13 @@ Add this repository to your [Hass.io](https://home-assistant.io/hassio/) instanc
 
 If you have trouble you can follow the [official docs](https://home-assistant.io/hassio/installing_third_party_addons/).
 
-Then install the "FreshRSS" add-on.
+Then install the "FreshRSS" app.
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on when the configuration is changed._
+**Note**: _Remember to restart the app when the configuration is changed._
 
-Example add-on configuration:
+Example app configuration:
 
 ```yaml
 log_level: info
@@ -28,7 +28,7 @@ keyfile: privkey.pem
 
 ### Option: `log_level`
 
-The `log_level` option controls the level of log output by the addon and can
+The `log_level` option controls the level of log output by the app and can
 be changed to be more or less verbose, which might be useful when you are
 dealing with an unknown issue. Possible values are:
 
@@ -37,7 +37,7 @@ dealing with an unknown issue. Possible values are:
 - `info`: Normal (usually) interesting events.
 - `warning`: Exceptional occurrences that are not errors.
 - `error`: Runtime errors that do not require immediate action.
-- `fatal`: Something went terribly wrong. Add-on becomes unusable.
+- `fatal`: Something went terribly wrong. App becomes unusable.
 
 Please note that each level automatically includes log messages from a
 more severe level, e.g., `debug` also shows `info` messages. By default,
@@ -67,9 +67,9 @@ The private key file to use for SSL.
 
 ## Third-Party Extensions
 
-This add-on allows you to store and manage FreshRSS extensions using the **addon_config** folder.
+This app allows you to store and manage FreshRSS extensions using the **addon_config** folder.
 
-- This folder is mapped inside the add-on from the **Home Assistant addon_config directory**.
+- This folder is mapped inside the app from the **Home Assistant addon_config directory**.
 - If installed from a GitHub repository, it is stored under:
 
 ```
