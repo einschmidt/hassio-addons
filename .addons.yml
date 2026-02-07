@@ -2,9 +2,9 @@
 channel: stable
 addons:
   caddy-2:
-    repository: einschmidt/addon-caddy-2
+    repository: einschmidt/app-caddy-2
     target: caddy-2
-    image: ghcr.io/einschmidt/caddy-2/{arch}
+    image: ghcr.io/einschmidt/caddy-2
   yarr:
     repository: einschmidt/app-yarr
     target: yarr
