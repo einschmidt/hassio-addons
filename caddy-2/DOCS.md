@@ -1,38 +1,38 @@
-# Home Assistant Add-on: Caddy 2
+# Home Assistant App: Caddy 2
 
 Caddy 2 is a modern, powerful, enterprise-grade open-source web server designed for simplicity, security, and flexibility.
 It’s unique in its ability to automatically manage HTTPS by default, without any complex configuration.
 
 ## Table of Contents
 
-1. [Add-on Installation](#add-on-installation)
+1. [App Installation](#app-installation)
 2. [Basic Setup Examples](#basic-setup-examples)
 3. [Configuration Options](#configuration-options)
 4. [Advanced Usage: Custom Binaries & Plugins](#advanced-usage-custom-binaries--plugins)
 
-## Add-on Installation
+## App Installation
 
-To install the Caddy 2 add-on, first add the repository to your [Hass.io](https://home-assistant.io/hassio/) instance by entering the following URL:
+To install the Caddy 2 app, first add the repository to your [Hass.io](https://home-assistant.io/hassio/) instance by entering the following URL:
 
 `https://github.com/einschmidt/hassio-addons`
 
 If you encounter any issues, refer to the [official documentation](https://home-assistant.io/hassio/installing_third_party_addons/) for guidance.
 
-Once the repository is added, search for and install the "Caddy 2" add-on.
+Once the repository is added, search for and install the "Caddy 2" app.
 
 ## Basic Setup Examples
 
-The Caddy 2 add-on offers multiple setup methods to accommodate different environments and network configurations. These setups range from simple to more complex, allowing you to choose the level of customization that fits your needs.
+The Caddy 2 app offers multiple setup methods to accommodate different environments and network configurations. These setups range from simple to more complex, allowing you to choose the level of customization that fits your needs.
 
 ### Default Proxy Server Setup (Simple)
 
-By default, Caddy 2 runs as a proxy server for Home Assistant without needing a `Caddyfile`. It uses the configuration provided in the add-on settings and automatically handles HTTPS for you.
+By default, Caddy 2 runs as a proxy server for Home Assistant without needing a `Caddyfile`. It uses the configuration provided in the app settings and automatically handles HTTPS for you.
 
 **Note**: If a `Caddyfile` is found in the configuration directory, the `non_caddyfile_config` settings will be ignored in favor of the Caddyfile.
 
 #### Example Configuration
 
-**Important**: _Always restart the add-on after making changes to the configuration._
+**Important**: _Always restart the app after making changes to the configuration._
 
 For a basic proxy setup, forwarding `yourdomain.com` to Home Assistant, use the following example (without a `Caddyfile`):
 
@@ -53,11 +53,11 @@ env_vars: []
 
 For more advanced customization, you can create and use a Caddyfile to define your proxy server's configuration. This allows greater control over settings such as routing, headers, and SSL management.
 
-To use a Caddyfile, place the file in the add-on configuration directory. You can access this directory using either the [SSH][ssh] or [Samba][samba] add-ons. The add-on will only search for the Caddyfile in this specific location.
+To use a Caddyfile, place the file in the app configuration directory. You can access this directory using either the [SSH][ssh] or [Samba][samba] apps. The app will only search for the Caddyfile in this specific location.
 
-#### Add-on Configuration Directory
+#### App Configuration Directory
 
-The Caddyfile needs to be placed in the add-on's configuration directory, which can be found at:
+The Caddyfile needs to be placed in the app's configuration directory, which can be found at:
 
 ```
 /addon_configs/c80c7555_caddy-2
@@ -67,11 +67,11 @@ The Caddyfile needs to be placed in the add-on's configuration directory, which 
 
 SSH: You can access the configuration directory via SSH by navigating to `/addon_configs/`.
 
-Samba: Alternatively, with the Samba add-on, you can access this folder from your network as a shared directory. Look for the `addon_configs` folder and locate the appropriate directory.
+Samba: Alternatively, with the Samba app, you can access this folder from your network as a shared directory. Look for the `addon_configs` folder and locate the appropriate directory.
 
 #### Managing Certificates
 
-Caddy 2 can automatically generate SSL certificates. If you want to use certificates from other add-ons (such as the Let’s Encrypt add-on), they can be placed in the `/ssl` directory. The Caddy 2 add-on will have access to this folder, allowing you to use external certificates or create certificates for other services.
+Caddy 2 can automatically generate SSL certificates. If you want to use certificates from other apps (such as the Let’s Encrypt app), they can be placed in the `/ssl` directory. The Caddy 2 app will have access to this folder, allowing you to use external certificates or create certificates for other services.
 
 #### Example Caddyfile
 
@@ -91,9 +91,9 @@ For more advanced configurations, refer to the [Caddyfile documentation](https:/
 
 #### Example Configuration for Caddyfile
 
-**Important**: _Restart the add-on after changing the configuration._
+**Important**: _Restart the app after changing the configuration._
 
-To instruct the add-on to use and monitor the `Caddyfile`, your configuration should look like this:
+To instruct the app to use and monitor the `Caddyfile`, your configuration should look like this:
 
 ```yaml
 non_caddyfile_config: {}
@@ -107,11 +107,11 @@ env_vars: []
 
 ### Custom Caddy Binary Setup (Advanced)
 
-For advanced users, you can replace the default Caddy binary with a custom one. Place your `caddy` binary in the [add-on configuration directory](#add-on-configuration-directory), using [SSH][ssh] or [Samba][samba]. The add-on will use binaries found in this folder.
+For advanced users, you can replace the default Caddy binary with a custom one. Place your `caddy` binary in the [app configuration directory](#app-configuration-directory), using [SSH][ssh] or [Samba][samba]. The app will use binaries found in this folder.
 
 #### Example Configuration
 
-**Important**: _Restart the add-on after any configuration changes._
+**Important**: _Restart the app after any configuration changes._
 
 Here’s an example configuration using a custom Caddy binary and a `Caddyfile`, with automatic updates and formatting enabled:
 
@@ -167,7 +167,7 @@ Enables automatic formatting and prettifying of the `Caddyfile`. Set this option
 
 ### Option: `args`
 
-Allows you to specify additional command-line arguments for Caddy 2. Add one or more arguments to the list, and they will be executed each time the add-on starts.
+Allows you to specify additional command-line arguments for Caddy 2. Add one or more arguments to the list, and they will be executed each time the app starts.
 
 **Note**: The `--config` argument is automatically added. For more information, refer to the official [Caddy documentation](https://caddyserver.com/docs/command-line#caddy-run).
 
@@ -195,14 +195,14 @@ Specifies the value assigned to the environment variable.
 
 ### Option: `log_level`
 
-Controls the verbosity of the log output from the add-on. This setting is useful for debugging or monitoring the add-on’s behavior. Available log levels are:
+Controls the verbosity of the log output from the app. This setting is useful for debugging or monitoring the app’s behavior. Available log levels are:
 
 - `trace`: Shows detailed information, including all internal function calls.
 - `debug`: Provides extensive debugging information.
 - `info`: Shows typical events and information.
 - `warning`: Logs unexpected situations that are not errors.
 - `error`: Records runtime errors that don’t need immediate action.
-- `fatal`: Critical errors that make the add-on unusable.
+- `fatal`: Critical errors that make the app unusable.
 
 Each level includes the messages from more severe levels. For example, `debug` also includes `info` messages. The default setting is `info`, which is recommended unless troubleshooting.
 
@@ -210,7 +210,7 @@ Each level includes the messages from more severe levels. For example, `debug` a
 
 ### Overview
 
-This add-on uses a single binary file to launch Caddy, which makes it highly customizable. You can run a custom build of Caddy with any version and plugins you need, providing maximum flexibility for advanced users.
+This app uses a single binary file to launch Caddy, which makes it highly customizable. You can run a custom build of Caddy with any version and plugins you need, providing maximum flexibility for advanced users.
 
 ### Custom Caddy Binaries
 
@@ -221,12 +221,12 @@ To build your own version of Caddy, including specific plugins or features, you 
 To use a custom-built Caddy binary, follow these steps:
 
 1. Build your custom Caddy binary using `xcaddy` or obtain a pre-built version that suits your needs.
-2. Place the `caddy` binary file into the add-on configuration folder.
-3. Restart the Caddy 2 add-on to begin using your custom version of Caddy.
+2. Place the `caddy` binary file into the app configuration folder.
+3. Restart the Caddy 2 app to begin using your custom version of Caddy.
 
 #### Accessing the Configuration Folder
 
-The add-on configuration folder can be found at:
+The app configuration folder can be found at:
 
 ```
 /addon_configs/c80c7555_caddy-2
@@ -234,7 +234,7 @@ The add-on configuration folder can be found at:
 
 This is where you should place your custom `caddy` binary and any related configuration files.
 
-Once the add-on is restarted, Caddy will use the custom binary you've provided, allowing you to leverage any additional features or plugins included in your custom build.
+Once the app is restarted, Caddy will use the custom binary you've provided, allowing you to leverage any additional features or plugins included in your custom build.
 
 [ssh]: https://home-assistant.io/addons/ssh/
 [samba]: https://home-assistant.io/addons/samba/
