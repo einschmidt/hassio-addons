@@ -1,23 +1,23 @@
-# Pocket ID Add-on
+# Pocket ID App
 
 ## Overview
 
 [Pocket ID](https://pocket-id.org/) is a simple and easy-to-use **OIDC (OpenID Connect) provider** that enables authentication using passkeys. It allows seamless and secure user authentication for your services without relying on traditional passwords.
 
-This add-on runs as a Home Assistant add-on, providing an **identity provider** within your network.
+This app runs as a Home Assistant app, providing an **identity provider** within your network.
 
 ## Supported Architectures
 
-This add-on supports the following architectures:
+This app supports the following architectures:
 
 - `amd64`
 - `aarch64`
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on when the configuration is changed._
+**Note**: _Remember to restart the app when the configuration is changed._
 
-Example add-on configuration:
+Example app configuration:
 
 ```yaml
 APP_URL: https://id.domain.com
@@ -38,9 +38,9 @@ Optional license key for MaxMind GeoIP database integration. If provided, it ena
 
 ## How to Use
 
-1. **Install the add-on** in Home Assistant.
-2. **Configure** the options as needed via the add-on settings.
-3. **Start the add-on** to launch Pocket ID.
+1. **Install the app** in Home Assistant.
+2. **Configure** the options as needed via the app settings.
+3. **Start the app** to launch Pocket ID.
 4. **Use the configured `APP_URL`** to integrate with your OIDC-compatible applications.
 
 ## Troubleshooting
