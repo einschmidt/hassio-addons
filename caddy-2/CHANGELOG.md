@@ -1,5 +1,5 @@
 ## What’s changed
 
-## ⬆️ Dependency updates
+## 🚀 Enhancements
 
-- ⬆️ Update caddyserver/caddy to v2.11.2 @[renovate[bot]](https://github.com/apps/renovate) ([#281](https://github.com/einschmidt/app-caddy-2/pull/281))
+- Add output of modules in custom caddy binaries during app startup @einschmidt ([#282](https://github.com/einschmidt/app-caddy-2/pull/282))
