@@ -1,9 +1,5 @@
 ## What’s changed
 
-## 🧰 Maintenance
-
-- Update strings and adapt workflows for upstream actions @einschmidt (#38)
-
 ## ⬆️ Dependency updates
 
-- ⬆️ Update Add-on base image to v9.2.0 @[renovate[bot]](https://github.com/apps/renovate) (#37)
+- ⬆️ Update authelia/authelia to v4.39.16 @[renovate[bot]](https://github.com/apps/renovate) ([#39](https://github.com/einschmidt/app-authelia/pull/39))
