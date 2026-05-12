@@ -127,6 +127,8 @@ caddy_fmt: true
 
 **Note**: _These examples are meant for reference. Adjust them to match your setup._
 
+Further information about using custom Caddy binaries can be found in the [Advanced Usage: Custom Binaries & Plugins](#advanced-usage-custom-binaries--plugins) section.
+
 ## Configuration Options
 
 ### Option: `non_caddyfile_config.email`
@@ -215,6 +217,16 @@ This app uses a single binary file to launch Caddy, which makes it highly custom
 ### Custom Caddy Binaries
 
 To build your own version of Caddy, including specific plugins or features, you can follow the instructions provided in the official Caddy documentation using the [`xcaddy` tool](https://caddyserver.com/docs/build#xcaddy). This allows you to compile your own version of Caddy with custom modules or plugins that are not included in the default binary.
+
+### Alternative Ways to Build Custom Binaries
+
+In addition to using `xcaddy`, there are community-maintained tools and Home Assistant add-ons that can help automate the process of building custom Caddy binaries with plugins.
+
+For example, some projects provide builder environments specifically designed for Home Assistant, which can simplify compiling Caddy with additional modules without requiring a full manual setup.
+
+One example is the [Caddy Builder add-on](https://github.com/jdeath/homeassistant-addons/tree/main/caddybuilder).
+
+Please note that such tools are developed and maintained by third parties. They are provided as examples rather than recommendations. Compatibility, maintenance, and security should always be evaluated before use.
 
 ### Installing a Custom Binary
 
