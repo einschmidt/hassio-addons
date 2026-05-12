@@ -2,5 +2,5 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update App base image to v20.1.0 @[renovate[bot]](https://github.com/apps/renovate) ([#95](https://github.com/einschmidt/app-pocket-id/pull/95))
-- ⬆️ Update pocket-id/pocket-id to v2.6.2 @[renovate[bot]](https://github.com/apps/renovate) ([#96](https://github.com/einschmidt/app-pocket-id/pull/96))
+- ⬆️ Update App base image to v20.1.1 @[renovate[bot]](https://github.com/apps/renovate) ([#97](https://github.com/einschmidt/app-pocket-id/pull/97))
+- ⬆️ Update pocket-id/pocket-id to v2.7.0 @[renovate[bot]](https://github.com/apps/renovate) ([#98](https://github.com/einschmidt/app-pocket-id/pull/98))
