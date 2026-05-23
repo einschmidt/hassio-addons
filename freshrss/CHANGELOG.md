@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update alpine_3_23/nginx to v1.28.3-r1 @[renovate[bot]](https://github.com/apps/renovate) ([#173](https://github.com/einschmidt/app-freshrss/pull/173))
+- ⬆️ Update FreshRSS/FreshRSS to v1.29.1 @[renovate[bot]](https://github.com/apps/renovate) ([#174](https://github.com/einschmidt/app-freshrss/pull/174))
