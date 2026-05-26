@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update authelia/authelia to v4.39.19 @[renovate[bot]](https://github.com/apps/renovate) ([#43](https://github.com/einschmidt/app-authelia/pull/43))
+- ⬆️ Update authelia/authelia to v4.39.20 @[renovate[bot]](https://github.com/apps/renovate) ([#44](https://github.com/einschmidt/app-authelia/pull/44))
