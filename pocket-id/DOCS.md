@@ -24,13 +24,34 @@ APP_URL: https://id.domain.com
 TRUST_PROXY: true
 ```
 
+Or, to trust only specific reverse proxies:
+
+```yaml
+APP_URL: https://id.domain.com
+TRUST_PROXY: false
+TRUST_PROXY_LIST: 10.0.0.10,10.0.1.0/24,fd00::/8
+```
+
 ### Option: `APP_URL`
 
 The `APP_URL` option sets the public-facing URL of the Pocket ID instance. This must be HTTPS and accessible by clients for authentication to work properly.
 
 ### Option: `TRUST_PROXY`
 
-If set to `true`, Pocket ID will trust proxy headers like `X-Forwarded-For`. This is useful when running behind a reverse proxy.
+Controls whether Pocket ID trusts all reverse proxies.
+
+- `false` (default): Do not trust any proxy headers.
+- `true`: Trust proxy headers from all proxies. Use this only if Pocket ID is only accessible through a trusted reverse proxy.
+
+### Option: `TRUST_PROXY_LIST`
+
+Specify a comma-separated list of trusted proxy IP addresses or CIDR ranges, for example:
+
+```text
+10.0.0.10,10.0.1.0/24,fd00::/8
+```
+
+When configured, this option takes precedence over `TRUST_PROXY` and is the recommended way to configure reverse proxies, as it limits trust to known proxy addresses.
 
 ### Option: `MAXMIND_LICENSE_KEY`
 
@@ -46,12 +67,14 @@ Optional license key for MaxMind GeoIP database integration. If provided, it ena
 ## Troubleshooting
 
 - Ensure that `APP_URL` is correctly set and accessible.
-- If using a reverse proxy, set `TRUST_PROXY` to `true` to avoid authentication issues.
+- If Pocket ID is behind a reverse proxy, either:
+  - set `TRUST_PROXY` to `true` to trust all proxies, or
+  - configure `TRUST_PROXY_LIST` with the IP addresses or CIDR ranges of your trusted reverse proxies (recommended).
 - If geolocation features are required, obtain and configure a MaxMind license key.
 
 ## More Information
 
 For additional details, visit the official Pocket ID resources:
 
-- **Website:** [Pocket ID](https://pocket-id.org/)
-- **Documentation:** [Getting Started Guide](https://pocket-id.org/docs/introduction/)
+- **Website:** https://pocket-id.org/
+- **Documentation:** https://pocket-id.org/docs/introduction/
