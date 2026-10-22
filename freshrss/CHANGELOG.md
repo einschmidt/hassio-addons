@@ -1,14 +1,8 @@
 ## What’s changed
 
-## 🧰 Maintenance
-
-- Migrate the user bundle to /etc/s6-overlay/user-bundles.d @einschmidt ([#198](https://github.com/einschmidt/app-freshrss/pull/198))
-
 ## ⬆️ Dependency updates
 
-- ⬆️ Update App base image to v21.0.5 @[renovate[bot]](https://github.com/apps/renovate) ([#192](https://github.com/einschmidt/app-freshrss/pull/192))
-- ⬆️ Update einschmidt/workflows action to v0.1.2 @[renovate[bot]](https://github.com/apps/renovate) ([#193](https://github.com/einschmidt/app-freshrss/pull/193))
-- ⬆️ Update tzdata APK package to v2026d-r0 @[renovate[bot]](https://github.com/apps/renovate) ([#194](https://github.com/einschmidt/app-freshrss/pull/194))
-- ⬆️ Update App base image to v21.0.6 @[renovate[bot]](https://github.com/apps/renovate) ([#195](https://github.com/einschmidt/app-freshrss/pull/195))
-- ⬆️ Update App base image to v21.0.7 @[renovate[bot]](https://github.com/apps/renovate) ([#196](https://github.com/einschmidt/app-freshrss/pull/196))
-- ⬆️ Update FreshRSS/FreshRSS to v1.30.1 @[renovate[bot]](https://github.com/apps/renovate) ([#197](https://github.com/einschmidt/app-freshrss/pull/197))
+- ⬆️ Update alpine_3_24/tzdata to v2026e-r0 @[renovate[bot]](https://github.com/apps/renovate) ([#199](https://github.com/einschmidt/app-freshrss/pull/199))
+- ⬆️ Update App base image to v21.0.8 @[renovate[bot]](https://github.com/apps/renovate) ([#200](https://github.com/einschmidt/app-freshrss/pull/200))
+- ⬆️ Update FreshRSS/FreshRSS to v1.30.2 @[renovate[bot]](https://github.com/apps/renovate) ([#201](https://github.com/einschmidt/app-freshrss/pull/201))
+- ⬆️ Update FreshRSS/FreshRSS to v1.30.4 @[renovate[bot]](https://github.com/apps/renovate) ([#202](https://github.com/einschmidt/app-freshrss/pull/202))
